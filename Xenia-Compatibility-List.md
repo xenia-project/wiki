@@ -1,0 +1,1 @@
+Issues for each game are tracked here in the [game-compatibility](https://github.com/xenia-project/game-compatibility/issues) repo. If filing a new game please follow the format of existing issues.
