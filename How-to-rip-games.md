@@ -22,12 +22,43 @@ If you're wanting to rip games from disc:
 Before beginning, you need to check if the USB is formatted:
 
 1. Go to *[Settings > System](https://i.imgur.com/xcCn6fM.png) > [Storage](https://i.imgur.com/No4y9xi.png)*
+<details> 
+<summary>Image</summary>
+
+Settings > System:
+![](https://i.imgur.com/xcCn6fM.png)
+
+Storage:
+![](https://i.imgur.com/No4y9xi.png) 
+
+</details>
+
 2. If you see an [Unformatted](https://i.imgur.com/Jex2sln.png) storage device, select it.
+
+<details> 
+<summary>Image</summary>
+
+Unformatted
+![](https://i.imgur.com/Jex2sln.png) 
+
+</details>
+
 
 * If it's already formatted, skip this section.
 
 3. [Press A to format](https://i.imgur.com/tIW9spr.png)
 4. [Select Yes](https://i.imgur.com/rKvf04S.png)
+
+<details> 
+<summary>Image</summary>
+
+Press A to format:
+![](https://i.imgur.com/tIW9spr.png) 
+
+Select Yes:
+![](https://i.imgur.com/rKvf04S.png) 
+
+</details>
 
 * **Note: This will erase everything from the drive. Make sure to move the files off of it first!**
 
@@ -41,7 +72,46 @@ Before beginning, you need to check if the USB is formatted:
 You'll want to change these options to stop game(s) from automatically starting: 
 
 * *[Settings > System](https://i.imgur.com/xcCn6fM.png) > [Console Settings](https://i.imgur.com/FStw2Y7.png) > [Auto-Play](https://i.imgur.com/r4lLczk.png) > [Disable](https://i.imgur.com/V5oEdQl.png)*
+
+<details> 
+<summary>Image</summary>
+
+Settings > System:
+![](https://i.imgur.com/xcCn6fM.png) 
+
+Console Settings:
+![](https://i.imgur.com/FStw2Y7.png) 
+
+Auto-Play:
+![](https://i.imgur.com/r4lLczk.png) 
+
+Disable:
+![](https://i.imgur.com/V5oEdQl.png)
+
+</details>
+
 * *[Settings > System](https://i.imgur.com/xcCn6fM.png) > [Console Settings](https://i.imgur.com/FStw2Y7.png) > [Startup and Shutdown](https://i.imgur.com/DgblBFS.png) > [Startup](https://i.imgur.com/GJpqOrH.png) > [Xbox Dashboard](https://i.imgur.com/H4ffGAV.png)*
+
+
+<details> 
+<summary>Image</summary>
+
+Settings > System:
+![](https://i.imgur.com/xcCn6fM.png) 
+
+Console Settings:
+![](https://i.imgur.com/FStw2Y7.png) 
+
+Startup and Shutdown:
+![](https://i.imgur.com/DgblBFS.png) 
+
+Startup:
+![](https://i.imgur.com/GJpqOrH.png)
+
+Xbox Dashboard:
+![](https://i.imgur.com/H4ffGAV.png)
+
+</details>
 
 1. Go to home on the dashboard
 2. Insert the disc into the drive, and close the tray.
