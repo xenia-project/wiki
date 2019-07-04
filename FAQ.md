@@ -26,8 +26,8 @@ Xenia will not support OG Xbox games/BC (backwards compatibility) anytime soon. 
 
 # Can I get an exe?
 
-[d3d12 (D3D12, recommended)](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-d3d12.zip?branch=d3d12&job=Configuration%3A%20Release&pr=false)
-[Master (Vulkan, NOT recommended)](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-master.zip?branch=master&job=Configuration%3A%20Release&pr=false)
+* **[d3d12 (D3D12, recommended)](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-d3d12.zip?branch=d3d12&job=Configuration%3A%20Release&pr=false)**
+* [Master (Vulkan, NOT recommended)](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-master.zip?branch=master&job=Configuration%3A%20Release&pr=false)
 
 **Don't be surprised if there are problems with Vulkan.**
 
