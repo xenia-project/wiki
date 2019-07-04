@@ -18,7 +18,7 @@ games it's not worth the maintenance burden. MacOS will likely remain unsupporte
 until Apple supports Vulkan.
 
 There's only a few major pieces that need cleanup before a Linux port can
-proceed in earnest, listed with the [cross-platform tag](https://github.com/xenia-project/xenia/labels/cross%20platform).
+proceed in earnest, listed with the [cross-platform tag](https://github.com/xenia-project/xenia/labels/cross-platform).
 Most of the code compiles with the latest Clang, and very few files have
 dependencies on Windows APIs (all of that is isolated to `_win.cc` files).
 Though the codebase is ready for the port, it's not a trivial task and anyone
