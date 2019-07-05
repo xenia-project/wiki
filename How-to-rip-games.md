@@ -122,12 +122,12 @@ Xbox Dashboard:
 
  * Note: Not all games have the *Install* option. List of currently known uninstallable games:
 
-* College Hoops 2k7
-* Minecraft
-* Pocket Bike Racers
-* Sneak King
-* Crackdown
-* Dead or Alive Xtreme 2
+   * College Hoops 2k7
+   * Minecraft
+   * Pocket Bike Racers
+   * Sneak King
+   * Crackdown
+   * Dead or Alive Xtreme 2
 
 5. Select the storage device you want to install the game on.
 
@@ -197,6 +197,11 @@ If the USB drive shows up as empty enable *[Show hidden files and folders](https
  * Some games have multiple .xex files, so if you can't find `default.xex` or it just doesn't work, try another one.
 
 
+## wxRipper method (more compatible)
+
+
+
+
 ## Redump method (rare/specific drives)
 
 *For these DVD drives:*
@@ -209,7 +214,3 @@ If the USB drive shows up as empty enable *[Show hidden files and folders](https
 ***IF YOUR DRIVE IS NOT LISTED HERE IT WILL NOT WORK!***
 
 *http://wiki.redump.org/index.php?title=Microsoft_Xbox_and_Xbox_360_Dumping_Guide*
-
-## Hotswap method (more compatible)
-
-*TODO*
