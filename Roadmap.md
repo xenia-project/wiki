@@ -5,7 +5,7 @@ Normal emulator stuff. Games work, etc.
 ### Cross-platform Support
 
 Linux support is slowly progressing, but really needs a strong contributor to
-fully support. OS X support is highly unlikely unless Apple gets Vulkan
+fully support. macOS support is highly unlikely unless Apple gets Vulkan
 support.
 
 ## Non-Goals
