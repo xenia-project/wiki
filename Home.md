@@ -11,3 +11,5 @@
 * [About](../wiki/About)
 * [For Developers](../wiki/For-Developers)
 * [Roadmap](../wiki/Roadmap)
+* [Style Guide](https://github.com/xenia-project/xenia/blob/master/docs/style_guide.md)
+* [More documents](https://github.com/xenia-project/xenia/tree/master/docs)
