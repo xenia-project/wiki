@@ -198,7 +198,17 @@ If the USB drive shows up as empty enable *[Show hidden files and folders](https
 
 
 ## wxRipper method (more compatible)
+<!--
+### Requirements
 
+  * DVD movie at least ~7.8GB in size
+  * DVD-DL drive
+  * Xbox 360 game disc
+  * Screwdriver
+  * wxRipper x64
+
+1. Insert the disc.
+-->
 
 
 
