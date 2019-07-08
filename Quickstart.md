@@ -1,7 +1,7 @@
 # System Requirements
 
 * Windows 7+ for Vulkan, Windows 10 for D3D12 (Linux/macOS not natively supported)
-  * Might run on Linux with Wine.
+  * *Might* run on Linux with Wine.
 * 64-bit x86 processor with AVX support
   * You can check with [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
 * Vulkan compatible GPU from [this list](https://vulkan.gpuinfo.org/) or a D3D12 compatible GPU.
