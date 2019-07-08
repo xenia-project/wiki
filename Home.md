@@ -1,9 +1,9 @@
-# Welcome to the xenia wiki!
+# Welcome to the Xenia wiki!
 
 ## Index
 
+* [Quickstart](../wiki/Quickstart)
 * [FAQ](../wiki/FAQ)
-* [How to rip games](../wiki/How-to-rip-games)
 * [Compatibility List](../wiki/Compatibility-List)
 * [About](../wiki/About)
 
