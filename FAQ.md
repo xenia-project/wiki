@@ -10,26 +10,6 @@ Not natively, but Xenia might run with Wine on Linux.
 macOS requires MoltenVK support which isn't implemented in Xenia.
 
 
-# Troubleshooting
-
-Make sure:
-
-* You're not using outdated or invalid [launch parameters](#Options).
-* You downloaded a *Release* build, not a *Checked* one.
-
-Saves are broken in a majority of games, especially ones with user profile saves.
-
-As for saves, etc that worked previously in older builds of Xenia, create a text file in the same directory as xenia.exe named `portable.txt`.
-
-Saves are in `Documents\xenia\content` by default.
-
-If you're having problems with the Halo games make sure that you're using a [D3D12](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-d3d12.zip?branch=d3d12&job=Configuration%3A%20Release&pr=false) build and your GPU supports it.
-
-*Halo: Combat Evolved Anniversary does not work.*
-
-**Xenia is a *work in progress* so expect issues.**
-
-
 # How do I dump/rip games?
 
 Refer to the guide in [Quickstart](../wiki/Quickstart#How-to-rip-games).
@@ -109,4 +89,24 @@ To play games in 4:3 you need to build Xenia with `video_mode->is_widescreen = 0
 
 # Hacks/mods
 
-Refer to the [Game hacks, mods, etc. page](../wiki/Game-hacks,-mods,-etc.).
+Refer to the [Game hacks, mods, etc. page](../wiki/Game-hacks,-mods,-etc).
+
+
+# Troubleshooting
+
+Make sure:
+
+* You're not using outdated or invalid [launch parameters](#Options).
+* You downloaded a *Release* build, not a *Checked* one.
+
+Saves are broken in a majority of games, especially ones with user profile saves.
+
+As for saves, etc that worked previously in older builds of Xenia, create a text file in the same directory as xenia.exe named `portable.txt`.
+
+Saves are in `Documents\xenia\content` by default.
+
+If you're having problems with the Halo games make sure that you're using a [D3D12](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-d3d12.zip?branch=d3d12&job=Configuration%3A%20Release&pr=false) build and your GPU supports it.
+
+*Halo: Combat Evolved Anniversary does not work.*
+
+**Xenia is a *work in progress* so expect issues.**
