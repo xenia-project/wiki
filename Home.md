@@ -7,8 +7,9 @@
 * [Compatibility List](../wiki/Compatibility-List)
 * [About](../wiki/About)
 
-## Developers
+## For Developers
 
+* [Building](https://github.com/xenia-project/xenia/blob/master/docs/building.md)
 * [For Developers](../wiki/For-Developers)
 * [Roadmap](../wiki/Roadmap)
 * [Style Guide](https://github.com/xenia-project/xenia/blob/master/docs/style_guide.md)
