@@ -3,6 +3,14 @@
 Refer to the [Quickstart page](../wiki/quickstart).
 
 
+# Can you add support for Windows Me? How about my Pentium II?
+
+Support for older operating systems and processors will not be added unless a
+contributor steps up to build and maintain them. All active contributors are on
+modern systems and busy with higher priority tasks. Whether the emulator runs on
+Windows Vista or not doesn't matter if it can't run games.
+
+
 # Does Xenia run on Linux or macOS?
 
 Not natively, but Xenia might run with Wine on Linux.
@@ -76,6 +84,12 @@ For all of Xenia's options, refer to the [Options page](../wiki/Options).
 # What's the difference between Gameplay and Playable?
 
 Gameplay means the game reaches gameplay, even if the game is unplayable.
+
+
+
+# I have a copy of the XDK. Do you want it?
+
+No. Do not post links or downloads to such resources or you will be banned.
 
 
 # Build tweaks
