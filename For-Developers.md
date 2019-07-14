@@ -1,16 +1,3 @@
-# I have a copy of the XDK. Do you want it?
-
-No. Do not post links or downloads to such resources or you will be banned.
-
-
-# Can you add support for Windows Me? How about my Pentium II?
-
-Support for older operating systems and processors will not be added unless a
-contributor steps up to build and maintain them. All active contributors are on
-modern systems and busy with higher priority tasks. Whether the emulator runs on
-Windows Vista or not doesn't matter if it can't run games.
-
-
 # Does Xenia run on Linux or macOS?
 
 The project is designed to support non-Windows platforms but until it's running
