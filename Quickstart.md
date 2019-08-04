@@ -22,7 +22,7 @@ The D3D12 renderer is currently unoptimized so expect low FPS.
 
 
 ## Where do I download Xenia?
-* **[D3D12](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-d3d12.zip?branch=d3d12&job=Configuration%3A%20Release&pr=false)**
+* **[Master](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-master.zip?branch=master&job=Configuration:%20Release&pr=false)**
 
 Xenia is sometimes detected as a virus. Ignore this, as it is a false positive.
 
