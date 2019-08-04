@@ -111,7 +111,7 @@ Refer to the [Game hacks, mods, etc. page](../wiki/Game-hacks,-mods,-etc).
 Make sure:
 
 * You're not using outdated or invalid [launch parameters](#Options).
-* You downloaded a *Release* build, not a *Checked* one.
+* You downloaded a ***Release*** build, not a *Checked* one.
 
 Saves are broken in a majority of games, especially ones with user profile saves.
 
@@ -119,7 +119,7 @@ As for saves, etc that worked previously in older builds of Xenia, create a text
 
 Saves are in `Documents\xenia\content` by default.
 
-If you're having problems with the Halo games make sure that you're using a [D3D12](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-d3d12.zip?branch=d3d12&job=Configuration%3A%20Release&pr=false) build and your GPU supports it.
+If you're having problems with the Halo games make sure that your your GPU supports D3D12.
 
 *Halo: Combat Evolved Anniversary does not work.*
 
