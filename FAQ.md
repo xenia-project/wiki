@@ -119,7 +119,7 @@ As for saves, etc that worked previously in older builds of Xenia, create a text
 
 Saves are in `Documents\xenia\content` by default.
 
-If you're having problems with the Halo games make sure that your your GPU supports D3D12.
+If you're having problems with the Halo games make sure that your GPU supports D3D12.
 
 *Halo: Combat Evolved Anniversary does not work.*
 
