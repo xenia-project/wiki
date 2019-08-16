@@ -13,22 +13,22 @@ Windows Vista or not doesn't matter if it can't run games.
 
 # Does Xenia run on Linux or macOS?
 
-Not natively, but Xenia might run with Wine on Linux.
+Not natively, but Xenia runs with Wine on Linux.
 
-macOS requires MoltenVK support which isn't implemented in Xenia.
+macOS is not compatible due to requiring MoltenVK support which isn't implemented in Xenia.
 
 
 # How do I dump/rip games?
 
-Refer to the guide in [Quickstart](../wiki/Quickstart#How-to-rip-games).
+See the guide in [Quickstart](../wiki/Quickstart#How-to-rip-games).
 
 ## Why is my game in trial/demo mode?
 
 ***By default Xenia runs ALL XBLA/digital games in demo/trial mode.***
 
-To run games in full/activated mode you will have to compile Xenia with [mask_ptr =](https://github.com/xenia-project/xenia/blob/master/src/xenia/kernel/xam/xam_content.cc#L52) 0xFFFFFFFF instead of 0.
+To run games in full/activated mode you need to change `license_mask = 0` to `-1` in `xenia.config.toml`.
 
-*[See building.md on GitHub](https://github.com/xenia-project/xenia/blob/master/docs/building.md)*
+It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
 
 
 # Does game *X* run?
@@ -46,7 +46,7 @@ For that there's [Cxbx-Reloaded](https://github.com/Cxbx-Reloaded/Cxbx-Reloaded)
 
 # Can Xenia play games online with Xbox Live?
 
-No. Xenia will never connect to official Xbox Live servers. Custom servers are a possibility, but won't happen anytime soon.
+Xenia may connect to **custom** servers in the far future, but it will **never** connect to official Xbox Live servers.
 
 
 # Input
@@ -58,6 +58,8 @@ Xenia natively supports XInput controllers, which includes but is not limited to
 For non-XInput controllers, wrapper(s) will have to be used:
 * [DS4Windows (Dualshock 4/PS4 controller)](https://github.com/Ryochan7/DS4Windows/releases)
 * [x360ce *x64* (DInput/Generic Controller/M+KB)](https://www.x360ce.com/)
+
+If you have any problems with those you can also try launching xenia via Steam.
 
 You can use the mouse to control the analog/joysticks, and rebind the keyboard controls ***with x360ce***.
 
@@ -73,12 +75,11 @@ Xbox 360 accessories like the Kinect are not supported.
 
 # How do I check my FPS?
 
-With an FPS indicator like [Rivatuner](https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html).
-
+With an FPS indicator like [Rivatuner](https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html). 
 
 # Options
 
-For all of Xenia's options, refer to the [Options page](../wiki/Options).
+For all of Xenia's options, see the [Options page](../wiki/Options).
 
 
 # What's the difference between Gameplay and Playable?
@@ -89,7 +90,7 @@ Gameplay means the game reaches gameplay, even if the game is unplayable.
 
 # I have a copy of the XDK. Do you want it?
 
-No. Do not post links or downloads to such resources or you will be banned.
+**No.** Do not post links or downloads to such resources or you will be banned.
 
 
 # Build tweaks
@@ -103,7 +104,7 @@ To play games in 4:3 you need to build Xenia with `video_mode->is_widescreen = 0
 
 # Hacks/mods
 
-Refer to the [Game hacks, mods, etc. page](../wiki/Game-hacks,-mods,-etc).
+See the [Game hacks, mods, etc. page](../wiki/Game-hacks,-mods,-etc).
 
 
 # Troubleshooting
