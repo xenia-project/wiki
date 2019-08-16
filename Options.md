@@ -1,4 +1,4 @@
-To change these options, open `xenia.config.toml` in a text editor like [Notepad++](https://notepad-plus-plus.org/download/). It will be in `Documents \ Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
+To change these options, open `xenia.config.toml` in a text editor like [Notepad++](https://notepad-plus-plus.org/download/). It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
 
 
 * 2x resolution scaling (up to 1440p) **ONLY WITH ROV**: `d3d12_resolution_scale = 2` 
