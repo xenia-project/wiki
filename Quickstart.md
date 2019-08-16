@@ -258,6 +258,6 @@ If the USB drive appears empty enable *[Show hidden files and folders](https://s
 
 ***By default Xenia runs ALL XBLA/digital games in demo/trial mode.***
 
-To run games in full/activated mode you will have to compile Xenia with [mask_ptr =](https://github.com/xenia-project/xenia/blob/master/src/xenia/kernel/xam/xam_content.cc#L52) 0xFFFFFFFF instead of 0.
+To run games in full/activated mode you need to change `license_mask = 0` to `-1` in `xenia.config.toml`.
 
-*[See building.md on GitHub](https://github.com/xenia-project/xenia/blob/master/docs/building.md)*
+It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
