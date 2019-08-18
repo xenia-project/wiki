@@ -2,22 +2,26 @@
 To change these options, open `xenia.config.toml` in a text editor like [Notepad++](https://notepad-plus-plus.org/download/). It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
 
 
-## 2x resolution scaling (up to 1440p) **ONLY WITH ROV**: `d3d12_resolution_scale = 2` 
+### 2x resolution scaling (up to 1440p) **ONLY WITH ROV**: 
+`d3d12_resolution_scale = 2` 
 
   * **ONLY 1-2X IS SUPPORTED.  *NOT 1.5x!***
 
-## Uncap FPS: `vsync = false`
+### Uncap FPS: 
+`vsync = false`
 
   * *This won't improve the framerate if your PC can't handle running the game at it's normal FPS.*
 
   * **This does not work with the Halo games.**
 
-## Vulkan: `gpu = vulkan`
+### Vulkan: 
+`gpu = vulkan`
 
   * **Don't expect Vulkan to work.**
   * *Vulkan v2 (rewrite) doesn't do anything yet.*
 
-## Change game language: `game_language = #`
+### Change game language: 
+`game_language = #`
 
   * `1`= EN (default)
   * `2`= JP
@@ -31,7 +35,7 @@ To change these options, open `xenia.config.toml` in a text editor like [Notepad
 
 Last updated https://github.com/xenia-project/xenia/commit/834ced0d6375404b41c21ea75d9f76855c8e42d6.
 
-# All config options:
+### All config options:
 ```
 [APU]
 apu = 'any'                             	# Audio system. Use: [any, nop, xaudio2]
