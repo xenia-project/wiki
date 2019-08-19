@@ -1,7 +1,7 @@
 # System Requirements
 
-* Windows 7+ for Vulkan, Windows 10 for D3D12 (Linux/macOS not natively supported)
-  * *Might* run on Linux with Wine.
+* Windows 7+ for Vulkan, Windows 10 for D3D12 (Linux/macOS not *natively* supported)
+  * Runs on Linux with Wine.
 * 64-bit x86 processor with AVX support
   * You can check with [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
 * Vulkan compatible GPU from [this list](https://vulkan.gpuinfo.org/) or a D3D12 compatible GPU.
@@ -27,7 +27,9 @@ The D3D12 renderer is currently unoptimized so expect low FPS.
 Xenia is sometimes detected as a virus. Ignore this, as it is a false positive.
 
 
-You **CANNOT** play games directly from the disc drive.
+### **YOU CANNOT PLAY GAMES DIRECTLY FROM THE DISC DRIVE!**
+
+See the guide below:
 
 # How to rip games
 <!--Dashboard version 2.0.17511.0, and Windows 10 were used.
