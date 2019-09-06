@@ -20,7 +20,7 @@ To change these options, open `xenia.config.toml` in a text editor like [Notepad
   * **This does not work with the Halo games.**
 
 ### Vulkan: 
-`gpu = vulkan`
+`gpu = 'vulkan'`
 
   * **Don't expect Vulkan to work.**
   * *Vulkan v2 (rewrite) doesn't do anything yet.*
