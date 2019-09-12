@@ -1,3 +1,26 @@
+# System Requirements
+
+* Windows 7+ for Vulkan, Windows 10 for D3D12 (Linux/macOS not *natively* supported)
+  * Runs on Linux with Wine.
+* 64-bit x86 processor with AVX support
+  * You can check with [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
+* Vulkan compatible GPU from [this list](https://vulkan.gpuinfo.org/) or a D3D12 compatible GPU.
+* [2017/2019 x64 Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+
+Xenia doesn't require any Xbox 360 system files.
+
+Xenia will check for the minimum supported CPU and GPU on startup and error out
+if one is not detected. Make sure that you have the latest drivers installed. **You cannot just remove the checks in the code and assume things will work.**
+
+Windows Update tends to lag behind, so download GPU drivers from your manufacturer:
+
+* **[AMD](https://www.amd.com/en/support)**
+* **[NVIDIA](https://www.nvidia.com/Download/index.aspx)**
+* **[Intel](https://downloadcenter.intel.com/product/80939/Graphics-Drivers)**
+
+The D3D12 renderer is currently unoptimized so expect low FPS.
+
+
 # How do I use Xenia?
 
 Refer to the [Quickstart page](../wiki/quickstart).
