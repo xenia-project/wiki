@@ -1,4 +1,4 @@
-  * Users:
+* Users:
     * [Quickstart](https://github.com/xenia-project/xenia/wiki/Quickstart)
     * [FAQ](https://github.com/xenia-project/xenia/wiki/FAQ)
     * [Compatibility List](https://github.com/xenia-project/xenia/wiki/Compatibility-List)
