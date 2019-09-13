@@ -297,6 +297,7 @@ This can be identified by running the game in Xenia.
 
   to `Documents\Xenia\TitleID\00000002` and their corresponding folder names.
 
+<details> 
 <summary>Image (click to expand)</summary>
 
 ![](https://i.imgur.com/e4zk397.png)
