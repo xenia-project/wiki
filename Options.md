@@ -7,6 +7,10 @@ You can make per-game configs by placing `xenia.config.toml` in the `content\Tit
 
 For launchers/frontends like [Bottlenose](https://github.com/quinton-ashley/bottlenose) you can use the `--config` launch parameter to specify what config to use.
 
+To launch specific games add the path to the game before the launch options, for example:
+
+```xenia.exe path/to/game.iso --vsync=false```
+
 ## Run games as full/activated
 
 `license_mask = -1`
