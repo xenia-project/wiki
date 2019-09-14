@@ -14,7 +14,7 @@ For launchers/frontends like [Bottlenose](https://github.com/quinton-ashley/bott
 ### 2x resolution scaling (up to 1440p) **ONLY WITH ROV**: 
 `d3d12_resolution_scale = 2` 
 
-  * **ONLY 1-2X IS SUPPORTED.  *NOT 1.5x!***
+  * **ONLY 1-2X IS SUPPORTED.  *NOTHING ELSE!***
 
 ### Uncap FPS: 
 `vsync = false`
