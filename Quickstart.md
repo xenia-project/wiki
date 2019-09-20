@@ -308,6 +308,6 @@ This can be identified by running the game in Xenia.
 
 ***By default Xenia runs ALL XBLA/digital games in demo/trial mode.***
 
-To run games in full/activated mode you need to change `license_mask = 0` to `-1` in `xenia.config.toml`.
+To run games in full/activated mode you need to change `license_mask = 0` to `-1` or `1` (depending on the game.) in `xenia.config.toml`.
 
 It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
