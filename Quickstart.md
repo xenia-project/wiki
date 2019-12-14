@@ -1,10 +1,24 @@
 # System Requirements
 
-* Windows 7+ for Vulkan, Windows 10 for D3D12 (Linux/macOS not *natively* supported)
-  * Runs on Linux with Wine.
-* 64-bit x86 processor with AVX support
+**Meeting recommended specifications won't guarantee perfect performance.**
+## Recommended:
+* OS: Windows 10 x64
+* CPU: 4th generation or later i5/i7 64-bit x86 processor with AVX(2) support
   * You can check with [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
-* Vulkan compatible GPU from [this list](https://vulkan.gpuinfo.org/) or a D3D12 compatible GPU.
+* GPU: GTX 980 Ti or later
+* RAM: 6GB or more
+* [2017/2019 x64 Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+
+### Minimum:
+* OS: Windows 7+ x64 (Linux/macOS not *natively* supported)
+  * Runs on Linux with Wine
+* CPU: 64-bit x86 processor with AVX(2) support
+  * You can check with [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
+  * **Pentiums do not support AVX(2)**
+* GPU: Vulkan compatible GPU from [this list](https://vulkan.gpuinfo.org/) or D3D12 compatible GPU
+  * D3D12on7 is not supported, so only Vulkan will work on Windows 7
+  * GPUs without ROV, and iGPUs in general will perform worse and possibly have more graphical issues
+* RAM: 4GB
 * [2017/2019 x64 Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
 Xenia doesn't require any Xbox 360 system files.
@@ -27,15 +41,13 @@ The D3D12 renderer is currently unoptimized so expect low FPS.
 Xenia is sometimes detected as a virus. Ignore this, as it is a false positive.
 
 
-### **YOU CANNOT PLAY GAMES DIRECTLY FROM THE DISC DRIVE!**
-
-See the guide below:
-
 # How to rip games
-<!--Dashboard version 2.0.17511.0, and Windows 10 were used.
+<!--Dashboard version 2.0.17511.0, and Windows 10 were used.-->
+
+**YOU CANNOT PLAY GAMES DIRECTLY FROM THE DISC DRIVE!**
 
 ## Stock console method
--->
+
 ### Requirements
 
 * Xbox 360 console
@@ -311,3 +323,5 @@ This can be identified by running the game in Xenia.
 To run games in full/activated mode you need to change `license_mask = 0` to `-1` or `1` (depending on the game.) in `xenia.config.toml`.
 
 It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
+
+**For more options, see the [Options wiki page](https://github.com/xenia-project/xenia/wiki/Options)*.
