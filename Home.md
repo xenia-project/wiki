@@ -1,17 +1,18 @@
 # Welcome to the Xenia wiki!
 
 ## Index
-  * [Quickstart](../wiki/Quickstart)
+  * [Quickstart](https://github.com/xenia-project/xenia/wiki/Quickstart)
     * [System Requirements](https://github.com/xenia-project/xenia/wiki/Quickstart#system-requirements)
     * [How to rip games](https://github.com/xenia-project/xenia/wiki/Quickstart#how-to-rip-games)
-  * [FAQ](../wiki/FAQ)
-  * [Compatibility List](../wiki/Compatibility-List)
-  * [About](../wiki/About)
+  * [FAQ](https://github.com/xenia-project/xenia/wiki/FAQ)
+  * [Options](https://github.com/xenia-project/xenia/wiki/Options)
+  * [Compatibility List](https://github.com/xenia-project/xenia/wiki/Compatibility-List)
+  * [About](https://github.com/xenia-project/xenia/wiki/About)
 
 ## For Developers
   * [Building](https://github.com/xenia-project/xenia/blob/master/docs/building.md)
-  * [For Developers](../wiki/For-Developers)
-  * [Roadmap](../wiki/Roadmap)
+  * [For Developers](https://github.com/xenia-project/xenia/wiki/For-Developers)
+  * [Roadmap](https://github.com/xenia-project/xenia/wiki/Roadmap)
   * [Style Guide](https://github.com/xenia-project/xenia/blob/master/docs/style_guide.md)
   * [Good first issue(s)](https://github.com/xenia-project/xenia/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
   * [More documents](https://github.com/xenia-project/xenia/tree/master/docs)
