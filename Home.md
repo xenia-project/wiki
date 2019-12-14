@@ -6,7 +6,7 @@
     * [How to rip games](https://github.com/xenia-project/xenia/wiki/Quickstart#how-to-rip-games)
   * [FAQ](https://github.com/xenia-project/xenia/wiki/FAQ)
   * [Options](https://github.com/xenia-project/xenia/wiki/Options)
-  * [Compatibility List](https://github.com/xenia-project/xenia/wiki/Compatibility-List)
+  * [Compatibility List](https://github.com/xenia-project/game-compatibility)
   * [About](https://github.com/xenia-project/xenia/wiki/About)
 
 ## For Developers
