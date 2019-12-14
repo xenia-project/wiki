@@ -11,13 +11,15 @@
 
 ### Minimum:
 * OS: Windows 7+ x64 (Linux/macOS not *natively* supported)
-  * Runs on Linux with Wine
+  * **Windows <10 support is limited. *Don't expect anything to work.***
+  * Runs on Linux with Wine.
 * CPU: 64-bit x86 processor with AVX(2) support
   * You can check with [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
-  * **Pentiums do not support AVX(2)**
+  * **Pentiums do not support AVX(2).**
 * GPU: Vulkan compatible GPU from [this list](https://vulkan.gpuinfo.org/) or D3D12 compatible GPU
-  * D3D12on7 is not supported, so only Vulkan will work on Windows 7
-  * GPUs without ROV, and iGPUs in general will perform worse and possibly have more graphical issues
+  * D3D12on7 is not supported, so only Vulkan will work on Windows 7.
+  * GPUs without ROV, and iGPUs in general will perform worse and possibly have more graphical issues.
+    * AMD GPUs also fall under this due to limited ROV support.
 * RAM: 4GB
 * [2017/2019 x64 Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
@@ -324,4 +326,4 @@ To run games in full/activated mode you need to change `license_mask = 0` to `-1
 
 It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
 
-**For more options, see the [Options wiki page](https://github.com/xenia-project/xenia/wiki/Options)*.
+*For more options, see the [Options wiki page](https://github.com/xenia-project/xenia/wiki/Options).*
