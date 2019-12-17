@@ -7,7 +7,7 @@
   * You can check with [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
 * GPU: GTX 980 Ti or later
 * RAM: 6GB or more
-* [2017/2019 x64 Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
+* [Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019](https://aka.ms/vs/16/release/vc_redist.x64.exe)
 
 ### Minimum:
 * OS: Windows 7+ x64 (Linux/macOS not *natively* supported)
@@ -18,6 +18,7 @@
   * **Pentiums do not support AVX(2).**
 * GPU: Vulkan compatible GPU from [this list](https://vulkan.gpuinfo.org/) or D3D12 compatible GPU
   * D3D12on7 is not supported, so only Vulkan will work on Windows 7.
+    * Windows 8.1 doesn't support D3D12 either.
   * GPUs without ROV, and iGPUs in general will perform worse and possibly have more graphical issues.
     * AMD GPUs also fall under this due to limited ROV support.
 * RAM: 4GB
