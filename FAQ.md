@@ -1,6 +1,11 @@
 # How do I use Xenia?
 
-Refer to the [Quickstart page](../wiki/quickstart).
+Refer to the [Quickstart page](https://github.com/xenia-project/xenia/wiki/Quickstart).
+
+
+# How do I fix the VCRUNTIME error?
+
+Make sure you downloaded a **[Release build of Xenia](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-master.zip?branch=master&job=Configuration:%20Release&pr=false)**, and download the **[latest x64 Microsoft Visual C++ Redistributable](https://aka.ms/vs/16/release/vc_redist.x64.exe)**.
 
 
 # Can you add support for Windows Me? How about my Pentium II?
