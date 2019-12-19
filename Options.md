@@ -11,27 +11,10 @@ To launch specific games add the path to the game before the launch options, for
 
 ```xenia.exe path/to/game.iso --vsync=false```
 
-## Run games as full/activated
+## Misc
 
+### Run games as full/activated
 `license_mask = -1`
-
-### 2x resolution scaling (up to 1440p) **ONLY WITH ROV**: 
-`d3d12_resolution_scale = 2` 
-
-  * **ONLY 1-2X IS SUPPORTED.  *NOTHING ELSE!***
-
-### Uncap FPS: 
-`vsync = false`
-
-  * *This won't improve the framerate if your PC can't handle running the game at it's normal FPS.*
-
-  * **This does not work with the Halo games.**
-
-### Vulkan: 
-`gpu = 'vulkan'`
-
-  * **Don't expect Vulkan to work.**
-  * *Vulkan v2 (rewrite) doesn't do anything yet.*
 
 ### Change game language: 
 `user_language = #`
@@ -52,6 +35,30 @@ To launch specific games add the path to the game before the launch options, for
   * `15`= NB
   * `16`= NL
   * `17`= ZH
+
+## GPU
+
+### 2x resolution scaling (up to 1440p) **ONLY WITH ROV**: 
+`d3d12_resolution_scale = 2` 
+
+  * **ONLY 1-2X IS SUPPORTED.  *NOTHING ELSE!***
+
+### Uncap FPS: 
+`vsync = false`
+
+  * *This won't improve the framerate if your PC can't handle running the game at it's normal FPS.*
+  * **This does not work with the Halo games.**
+
+### Disable ROV (rasterizer-ordered views)
+`d3d12_edram_rov = false`
+
+ * Disables [rasterizer-ordered views](https://github.com/xenia-project/xenia/wiki/FAQ#what-is-rov). Recommended for AMD GPUs.
+
+### Vulkan: 
+`gpu = 'vulkan'`
+
+  * **Don't expect Vulkan to work.**
+  * *Vulkan v2 (rewrite) doesn't do anything yet.*
 
 
 ### All config options:
