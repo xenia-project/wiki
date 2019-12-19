@@ -14,7 +14,7 @@ To launch specific games add the path to the game before the launch options, for
 ## Misc
 
 ### Run games as full/activated
-`license_mask = -1`
+`license_mask = -1` or `1`
 
 ### Change game language: 
 `user_language = #`
