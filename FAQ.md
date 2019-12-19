@@ -25,7 +25,7 @@ macOS is not compatible due to requiring MoltenVK support which isn't implemente
 
 # How do I dump/rip games?
 
-See the guide in [Quickstart](../wiki/Quickstart#How-to-rip-games).
+See the guide in [Quickstart](https://github.com/xenia-project/xenia/wiki/Quickstart#How-to-rip-games).
 
 ## Why is my game in trial/demo mode?
 
@@ -84,7 +84,7 @@ With an FPS indicator like [Rivatuner](https://www.guru3d.com/files-details/rtss
 
 # Options
 
-For all of Xenia's options, see the [Options page](../wiki/Options).
+For all of Xenia's options, see the [Options page](https://github.com/xenia-project/xenia/wiki/Options).
 
 
 # What's the difference between Gameplay and Playable?
@@ -109,7 +109,7 @@ To play games in 4:3 you need to build Xenia with `video_mode->is_widescreen = 0
 
 # Hacks/mods
 
-See the [Game hacks, mods, etc. page](../wiki/Game-hacks,-mods,-etc).
+See the [Game hacks, mods, etc. page](https://github.com/xenia-project/xenia/wiki/Game-hacks,-mods,-etc).
 
 
 # Troubleshooting
