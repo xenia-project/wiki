@@ -55,7 +55,7 @@ Xenia is sometimes detected as a virus. Ignore this, as it is a false positive.
 
 * Xbox 360 console
 * USB storage device that's at least 16GB. You *might* encounter problems with smaller devices.
-* [Velocity](https://github.com/Gualdimar/Velocity/releases)
+* [Velocity](https://github.com/Gualdimar/Velocity/releases/download/xex%2Biso-branch/Velocity-XEXISO.rar)
 
 If you're wanting to rip games from disc:
 
