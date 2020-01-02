@@ -47,7 +47,7 @@ Xenia is sometimes detected as a virus. Ignore this, as it is a false positive.
 # How to rip games
 <!--Dashboard version 2.0.17511.0, and Windows 10 were used.-->
 
-**YOU CANNOT PLAY GAMES DIRECTLY FROM THE DISC DRIVE, OR USE AN XBOX ONE TO RIP GAMES**
+**YOU CANNOT PLAY GAMES DIRECTLY FROM THE DISC DRIVE, OR USE AN XBOX ONE TO RIP GAMES!**
 
 ## Stock console method
 
