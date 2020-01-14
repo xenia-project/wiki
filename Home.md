@@ -1,6 +1,8 @@
+![](https://github.com/xenia-project/xenia/raw/master/assets/icon/128.png)
+
 # Welcome to the Xenia wiki!
 
-## Index
+### Index:
   * [Quickstart](https://github.com/xenia-project/xenia/wiki/Quickstart)
     * [System Requirements](https://github.com/xenia-project/xenia/wiki/Quickstart#system-requirements)
     * [How to rip games](https://github.com/xenia-project/xenia/wiki/Quickstart#how-to-rip-games)
@@ -9,7 +11,7 @@
   * [Compatibility List](https://github.com/xenia-project/game-compatibility/issues)
   * [About](https://github.com/xenia-project/xenia/wiki/About)
 
-## For Developers
+### For Developers:
   * [Building](https://github.com/xenia-project/xenia/blob/master/docs/building.md)
   * [For Developers](https://github.com/xenia-project/xenia/wiki/For-Developers)
   * [Roadmap](https://github.com/xenia-project/xenia/wiki/Roadmap)
