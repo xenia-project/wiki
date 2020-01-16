@@ -10,10 +10,14 @@
   * [Compatibility List](https://github.com/xenia-project/game-compatibility/issues)
   * [About](https://github.com/xenia-project/xenia/wiki/About)
   * [Game hacks, mods, etc](https://github.com/xenia-project/xenia/wiki/Game-hacks,-mods,-etc)
----
+
+#
 ### For Developers:
   * [Building](https://github.com/xenia-project/xenia/blob/master/docs/building.md)
   * [For Developers](https://github.com/xenia-project/xenia/wiki/For-Developers)
   * [Roadmap](https://github.com/xenia-project/xenia/wiki/Roadmap)
   * [Style Guide](https://github.com/xenia-project/xenia/blob/master/docs/style_guide.md)
   * [More documentation](https://github.com/xenia-project/xenia/tree/master/docs)
+
+---
+*[Canary Wiki](https://github.com/xenia-canary/xenia-canary/wiki)*
