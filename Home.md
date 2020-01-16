@@ -2,7 +2,7 @@
 
 # Welcome to the Xenia wiki!
 
-### Index:
+### Users:
   * [Quickstart](https://github.com/xenia-project/xenia/wiki/Quickstart)
     * [System Requirements](https://github.com/xenia-project/xenia/wiki/Quickstart#system-requirements)
     * [How to rip games](https://github.com/xenia-project/xenia/wiki/Quickstart#how-to-rip-games)
