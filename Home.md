@@ -11,6 +11,7 @@
   * [Compatibility List](https://github.com/xenia-project/game-compatibility/issues)
   * [About](https://github.com/xenia-project/xenia/wiki/About)
 
+#
 ### For Developers:
   * [Building](https://github.com/xenia-project/xenia/blob/master/docs/building.md)
   * [For Developers](https://github.com/xenia-project/xenia/wiki/For-Developers)
@@ -18,3 +19,7 @@
   * [Style Guide](https://github.com/xenia-project/xenia/blob/master/docs/style_guide.md)
   * [Good first issue(s)](https://github.com/xenia-project/xenia/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
   * [More documents](https://github.com/xenia-project/xenia/tree/master/docs)
+
+---
+
+*[Xenia Canary Wiki](https://github.com/xenia-canary/xenia-canary/wiki)*
