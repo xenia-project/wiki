@@ -1,6 +1,8 @@
 *Last updated: https://github.com/xenia-project/xenia/commit/b422ed750b37c9f936bb92682e34e39fa8fc2105*
 
-# How to use:
+---
+
+### How to use:
 To change these options, open `xenia.config.toml` in a text editor like [Notepad++](https://notepad-plus-plus.org/download/). It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
 
 You can make per-game configs by placing `xenia.config.toml` in the `content\TitleID` folder.
@@ -11,14 +13,14 @@ To launch specific games add the path to the game before the launch options, for
 
 ```xenia.exe path/to/game.iso --vsync=false```
 
-## Misc
+#
+### Main Options:
 
-### Run games as full/activated
+#### Run games as full/activated
 `license_mask = -1` or `1`
 
-### Change game language: 
+#### Change game language: 
 `user_language = #`
-
   * `1`= EN (default)
   * `2`= JA
   * `3`= DE
@@ -36,31 +38,27 @@ To launch specific games add the path to the game before the launch options, for
   * `16`= NL
   * `17`= ZH
 
-## GPU
+### GPU:
 
-### 2x resolution scaling (up to 1440p) **ONLY WITH ROV**: 
+#### 2x resolution scaling (up to 1440p) **ONLY WITH ROV**: 
 `d3d12_resolution_scale = 2` 
-
   * **ONLY 1-2X IS SUPPORTED.  *NOTHING ELSE!***
 
-### Uncap FPS: 
+#### Uncap FPS: 
 `vsync = false`
-
   * *This won't improve the framerate if your PC can't handle running the game at it's normal FPS.*
   * **This does not work with the Halo games.**
 
-### Disable ROV (rasterizer-ordered views)
+#### Disable ROV (rasterizer-ordered views)
 `d3d12_edram_rov = false`
-
  * Disables [rasterizer-ordered views](https://github.com/xenia-project/xenia/wiki/FAQ#what-is-rov). Recommended for AMD GPUs.
 
-### Vulkan: 
+#### Vulkan: 
 `gpu = 'vulkan'`
-
   * **Don't expect Vulkan to work.**
   * *Vulkan v2 (rewrite) doesn't do anything yet.*
 
-
+#
 ### All config options:
 ```
 [APU]
