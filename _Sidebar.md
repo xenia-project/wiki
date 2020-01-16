@@ -20,4 +20,5 @@
   * [More documentation](https://github.com/xenia-project/xenia/tree/master/docs)
 
 ---
-*[Canary Wiki](https://github.com/xenia-canary/xenia-canary/wiki)*
+
+*[Xenia Canary Wiki](https://github.com/xenia-canary/xenia-canary/wiki)*
