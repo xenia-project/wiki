@@ -73,7 +73,7 @@ You can use the mouse to control the analog/joysticks, and rebind the keyboard c
 
 </details>
 
-Xbox 360 accessories like the Kinect are not supported.
+Xenia does not support mice, accessories like the Kinect, uDraw GameTablet, or microphones.
 
 #
 ### Can Xenia play games online with Xbox Live?
