@@ -1,4 +1,4 @@
-*Last updated: https://github.com/xenia-project/xenia/commit/b422ed750b37c9f936bb92682e34e39fa8fc2105*
+*[Xenia Canary Options](https://github.com/xenia-canary/xenia-canary/wiki/Options)*
 
 ---
 
