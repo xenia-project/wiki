@@ -71,8 +71,7 @@ If you're wanting to rip games from disc:
 Before beginning, you need to check if the USB is formatted:
 
 1. Go to *[Settings > System](https://i.imgur.com/xcCn6fM.png) > [Storage](https://i.imgur.com/No4y9xi.png)*
-<details> 
-<summary>Images (click to expand)</summary>
+<details><summary>Images (click to expand)</summary>
 
 Settings > System:
 ![](https://i.imgur.com/xcCn6fM.png)
@@ -84,8 +83,7 @@ Storage:
 
 2. If you see an [Unformatted](https://i.imgur.com/Jex2sln.png) storage device, select it.
 
-<details> 
-<summary>Image (click to expand)</summary>
+<details><summary>Image (click to expand)</summary>
 
 Unformatted
 ![](https://i.imgur.com/Jex2sln.png) 
@@ -98,8 +96,7 @@ Unformatted
 3. [Press A to format](https://i.imgur.com/tIW9spr.png)
 4. [Select Yes](https://i.imgur.com/rKvf04S.png)
 
-<details> 
-<summary>Images (click to expand)</summary>
+<details><summary>Images (click to expand)</summary>
 
 Press A to format:
 ![](https://i.imgur.com/tIW9spr.png) 
@@ -122,8 +119,7 @@ You'll want to change these options to stop game(s) from automatically starting:
 
 * *[Settings > System](https://i.imgur.com/xcCn6fM.png) > [Console Settings](https://i.imgur.com/FStw2Y7.png) > [Auto-Play](https://i.imgur.com/r4lLczk.png) > [Disable](https://i.imgur.com/V5oEdQl.png)*
 
-<details> 
-<summary>Images (click to expand)</summary>
+<details><summary>Images (click to expand)</summary>
 
 Settings > System:
 ![](https://i.imgur.com/xcCn6fM.png) 
@@ -141,8 +137,7 @@ Disable:
 
 * *[Settings > System](https://i.imgur.com/xcCn6fM.png) > [Console Settings](https://i.imgur.com/FStw2Y7.png) > [Startup and Shutdown](https://i.imgur.com/DgblBFS.png) > [Startup](https://i.imgur.com/GJpqOrH.png) > [Xbox Dashboard](https://i.imgur.com/H4ffGAV.png)*
 
-<details> 
-<summary>Images (click to expand)</summary>
+<details><summary>Images (click to expand)</summary>
 
 Settings > System:
 ![](https://i.imgur.com/xcCn6fM.png) 
@@ -189,8 +184,7 @@ Once it's 100% Completed press A to continue, and press B to go back to home.
 1. Go to *[Settings > System](https://i.imgur.com/xcCn6fM.png) > [Storage](https://i.imgur.com/No4y9xi.png) > [Hard Drive](https://i.imgur.com/8EB0EFr.png) > [Press Y (Device Options)](https://i.imgur.com/rRaoeAR.png) > [Transfer Content](https://i.imgur.com/wdvYqDR.png) > [USB Storage Device](https://i.imgur.com/6FVly57.png)*
 4. Choose what you want to transfer. Keep in mind full games and trials/demos are in separate categories.
 
-<details> 
-<summary>Images (click to expand)</summary>
+<details><summary>Images (click to expand)</summary>
 
 Settings > System:
 ![](https://i.imgur.com/xcCn6fM.png)
@@ -214,8 +208,7 @@ USB Storage Device:
 
 5. Press right, then *[Start](https://i.imgur.com/Gpb5Zya.png)*.
 
-<details> 
-<summary>Image (click to expand)</summary>
+<details><summary>Image (click to expand)</summary>
 
 Start:
 ![](https://i.imgur.com/Gpb5Zya.png)
@@ -245,6 +238,15 @@ If the USB drive appears empty enable *[Show hidden files and folders](https://s
  * If the game is extracted you will need to drag `default.xex` onto Xenia.
  * Some games have multiple .xex files, so if you can't find `default.xex` or it just doesn't work, try another one.
 
+### Section 4. Activating games
+
+***By default Xenia runs ALL XBLA/digital games in demo/trial mode.***
+
+To run games in full/activated mode you need to change `license_mask = 0` to `-1` or `1` (depending on the game.) in `xenia.config.toml`.
+
+It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
+
+*For all options, see the [Options wiki page](https://github.com/xenia-project/xenia/wiki/Options).*
 
 <!--## wxRipper method (more compatible)
 
@@ -261,6 +263,51 @@ If the USB drive appears empty enable *[Show hidden files and folders](https://s
 
 
 
+# How to install DLCs
+  1. Identify what the Game Title ID is.
+This can be identified by running the game in Xenia.
+
+<details><summary>Image (click to expand)</summary>
+
+![](https://i.imgur.com/fc0rmSc.png)
+
+</details>
+
+  2. Locate your DLC Content folder from your removable storage.
+
+<details><summary>Image (click to expand)</summary>
+
+![](https://i.imgur.com/t8IMZiG.png)
+
+</details>
+
+  3. Download Velocity from [here](https://github.com/Gualdimar/Velocity/releases).
+
+  4. Open the Packages with Velocity.
+
+<details><summary>Image (click to expand)</summary>
+
+![](https://i.imgur.com/7q7q0oB.png)
+
+</details>
+
+
+  5. Extract the content packages
+<details><summary>Image (click to expand)</summary>
+
+![](https://i.imgur.com/WyA4yhm.png)
+
+</details>
+
+  to `Documents\Xenia\TitleID\00000002` and their corresponding folder names.
+
+<details><summary>Image (click to expand)</summary>
+
+![](https://i.imgur.com/e4zk397.png)
+
+</details>
+
+
 ## Redump method (rare/specific drives)
 
 *For these DVD drives:*
@@ -273,62 +320,3 @@ If the USB drive appears empty enable *[Show hidden files and folders](https://s
 ***IF YOUR DRIVE IS NOT LISTED HERE IT WILL NOT WORK!***
 
 *http://wiki.redump.org/index.php?title=Microsoft_Xbox_and_Xbox_360_Dumping_Guide*
-
-# How to install DLCs
-  1. Identify what the Game Title ID is.
-This can be identified by running the game in Xenia.
-
-<details> 
-<summary>Image (click to expand)</summary>
-
-![](https://i.imgur.com/fc0rmSc.png)
-
-</details>
-
-  2. Locate your DLC Content folder from your removable storage.
-
-<details> 
-<summary>Image (click to expand)</summary>
-
-![](https://i.imgur.com/t8IMZiG.png)
-
-</details>
-
-  3. Download Velocity from [here](https://github.com/Gualdimar/Velocity/releases).
-
-  4. Open your Packages with Velocity.
-
-<details> 
-<summary>Image (click to expand)</summary>
-
-![](https://i.imgur.com/7q7q0oB.png)
-
-</details>
-
-
-  5. Extract the content packages
-<details> 
-<summary>Image (click to expand)</summary>
-
-![](https://i.imgur.com/WyA4yhm.png)
-
-</details>
-
-  to `Documents\Xenia\TitleID\00000002` and their corresponding folder names.
-
-<details> 
-<summary>Image (click to expand)</summary>
-
-![](https://i.imgur.com/e4zk397.png)
-
-</details>
-
-# How to run games in full/activated mode on Xenia
-
-***By default Xenia runs ALL XBLA/digital games in demo/trial mode.***
-
-To run games in full/activated mode you need to change `license_mask = 0` to `-1` or `1` (depending on the game.) in `xenia.config.toml`.
-
-It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
-
-*For more options, see the [Options wiki page](https://github.com/xenia-project/xenia/wiki/Options).*
