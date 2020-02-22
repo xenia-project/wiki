@@ -18,7 +18,3 @@
   * [Roadmap](https://github.com/xenia-project/xenia/wiki/Roadmap)
   * [Style Guide](https://github.com/xenia-project/xenia/blob/master/docs/style_guide.md)
   * [More documentation](https://github.com/xenia-project/xenia/tree/master/docs)
-
----
-
-*[Xenia Canary Wiki](https://github.com/xenia-canary/xenia-canary/wiki)*
