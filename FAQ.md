@@ -35,9 +35,7 @@ It will be in `Documents\Xenia` by default. If `portable.txt` is present it will
 
 #
 ### Does game *X* run?
-Check the [compatibility list](https://github.com/xenia-project/game-compatibility/issues). If it's not there, ask in the [Discord #help channel](https://discord.me/xenia-emulator) or test it yourself.
-
-**The compatibility list is NOT for begging to have games fixed.**
+Check the [compatibility list](https://github.com/xenia-project/game-compatibility#game-compatibility). If it's not there, ask in the [Discord #help channel](https://discord.gg/5g93S8H) or test it yourself.
 
 ### How do I run Fable II, Gears of War, etc?
 To run those games you must use [Xenia Canary](https://github.com/xenia-canary/xenia-canary).
