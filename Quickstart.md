@@ -228,8 +228,8 @@ If the USB drive appears empty enable *[Show hidden files and folders](https://s
 * XBLA games will be one file, GOD (disc) games will contain a file, along with a *.data folder with the same name.
 * *ContentCache.pkg is irrelevant. Ignore it.*
 
- 4. To confirm that it is indeed a game try opening the file with Velocity.
- 5. Once you've made sure the file opens in Velocity and works in Xenia you can rename, or move the folder the game is in for convenience.
+ 4. To confirm that it is indeed a game try opening the file in Xenia.
+ 5. Once you've made sure the file works in Xenia you can rename, or move the folder the game is in for convenience.
 
 * **FOLDER ABOVE, NOT FILE or *.DATA FOLDER!**
 
