@@ -40,12 +40,13 @@ The D3D12 renderer is currently unoptimized so expect low FPS.
 
 ## Where do I download Xenia?
   * **[Master](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-master.zip?branch=master&job=Configuration:%20Release&pr=false)**
+  * *[Canary](https://github.com/xenia-canary/xenia-canary/releases/latest/download/xenia-canary.zip)*
 
 Xenia is sometimes detected as a virus. Ignore this, as it is a false positive.
 
 Xenia Canary is a fork of Xenia with changes not present in master, such as the Unreal Engine workaround, etc.
 
-For more information: https://github.com/xenia-canary/xenia-canary#xenia---xbox-360-emulator
+For more information: https://github.com/xenia-canary/xenia-canary/wiki/FAQ
 
 # How to rip games
 <!--Dashboard version 2.0.17511.0, and Windows 10 were used.-->
