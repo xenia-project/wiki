@@ -10,6 +10,21 @@ Refer to the [Quickstart page](https://github.com/xenia-project/xenia/wiki/Quick
 Make sure you downloaded a **[Release build of Xenia](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia_master.zip?branch=master&job=Configuration:%20Release&pr=false)**, and download the **[latest x64 Microsoft Visual C++ Redistributable](https://aka.ms/vs/16/release/vc_redist.x64.exe)**.
 
 #
+### How do I use xenia-vfs-dump?
+xenia-vfs-dump is a command-line tool use for dumping content from STFS and SVOD containers.
+
+You can download it from [here](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-vfs-dump_master.zip?branch=master&job=Configuration:%20Release&pr=false).
+
+Usage: `xenia-vfs-dump [ContainerPath] [DestinationOutput]`
+
+<details><summary>Example GIF (click to expand)</summary>
+
+![](https://cdn.discordapp.com/attachments/561407879823753217/686821806119845888/vfs.gif)
+
+</details>
+
+
+#
 ### Can you add support for Windows Me? How about my Pentium II?
 Support for older operating systems and processors will not be added unless a
 contributor steps up to build and maintain them. All active contributors are on
