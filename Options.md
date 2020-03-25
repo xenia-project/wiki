@@ -1,68 +1,89 @@
 *[Xenia Canary Options](https://github.com/xenia-canary/xenia-canary/wiki/Options)*
 
 ---
-
-### How to use:
-To change these options, open `xenia.config.toml` in a text editor like [Notepad++](https://notepad-plus-plus.org/download/). It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
-
-You can make per-game configs by placing `config\TitleID.config.toml` in `Documents\Xenia`.
-
-For launchers/frontends like [Bottlenose](https://github.com/quinton-ashley/bottlenose) you can use the `--config` launch parameter to specify what config to use.
-
-To launch specific games add the path to the game before the launch options, for example:
-
-```xenia.exe path/to/game.iso --vsync=false```
-
+#### How to use:
+* Go to `Documents\Xenia` and open `xenia.config.toml` in a text editor like [Notepad++](https://notepad-plus-plus.org/download/).
+    * If `portable.txt` is present it will be in the same directory as xenia.exe.
+    * Per-game configs go in `config\TitleID.config.toml`.
+* For launchers/frontends like [Bottlenose](https://github.com/quinton-ashley/bottlenose) you can use the `--config` launch parameter to specify what config to use.
+    * To launch specific games, add the path to the game before the launch options. For example:
+      ```cmd
+      xenia.exe path/to/game/default.xex --vsync=false
+      ```
 #
-### Main Options:
+### Options:
 
 #### Run games as full/activated
-`license_mask = -1` or `1`
+| `license_mask` =                        | `#`
+| ----------------                        | ---
+| Deactivated/trial/demo mode *(default)* | `0`
+| Activated/full mode                     | `-1` or `1`
 
-#### Change game language: 
-`user_language = #`
-  * `1`= EN (default)
-  * `2`= JA
-  * `3`= DE
-  * `4`= FR
-  * `5`= ES
-  * `6`= IT
-  * `7`= KO
-  * `8`= ZH
-  * `9`= PT
-  * `11`= PL
-  * `12`= RU
-  * `13`= SV
-  * `14`= TR
-  * `15`= NB
-  * `16`= NL
-  * `17`= ZH
+#### Game language
+| `user_language` =                 | `#`
+| -----------------                 | :-:
+| EN (English, *default*)           | `1`
+| JA (Japanese/日本語)              | `2`
+| DE (German/Deutsche)              | `3`
+| FR (French/Français)              | `4`
+| ES (Spanish/Español)              | `5`
+| IT (Italian/Italiano)             | `6`
+| KO (Korean/한국인)                | `7`
+| ZH (Traditional Chinese/繁體中文) | `8`
+| PT (Portuguese/Português)         | `9`
+| PL (Polish/Polskie)               | `11`
+| RU (Russian/русский)              | `12`
+| SV (?)                            | `13`
+| TR (Turkish/Türk)                 | `14`
+| NB (?)                            | `15`
+| NL (Dutch/Nederlands)             | `16`
+| ZH (Simplified Chinese/简体中文)   | `17`
 
 ### GPU:
 
-#### 2x resolution scaling (up to 1440p) **ONLY WITH ROV**: 
-`d3d12_resolution_scale = 2` 
-  * **ONLY 1-2X IS SUPPORTED.  *NOTHING ELSE!***
+#### Renderer/Backend:
+| `gpu` =                           | `string`
+| -------                           | -------
+| Any *(default, **recommended**)*  | `any`
+| Direct3D 12                       | `d3d12`
+| Vulkan *(not recommended)*        | `vulkan`
+| Vulkan rewrite *(non-functional)* | `vk`
+| Null *(blank/nothing)*            | `null`
 
-#### Uncap FPS: 
-`vsync = false`
-  * *This won't improve the framerate if your PC can't handle running the game at it's normal FPS.*
-  * **This does not work with the Halo games.**
+#### Resolution scaling ***(REQUIRES ROV)***:
+| `d3d12_resolution_scale` = | `#`
+| -------------------------- | ---
+| 1x (*default*, 1280x720)   | `1`
+| 2x (2560x1440)             | `2`
 
-#### Disable ROV (rasterizer-ordered views)
-`d3d12_edram_rov = false`
- * Disables [rasterizer-ordered views](https://github.com/xenia-project/xenia/wiki/FAQ#what-is-rov). Recommended for AMD GPUs.
+#### Vsync:
+| `vsync` =          | `bool`
+| ---------          | ------
+| On *(default)*     | `true`
+| Off *(uncaps FPS)* | `false`
+  * *This won't improve the framerate if your PC can't handle running the game at it's native FPS.*
+  * *This doesn't work with the Halo games.*
 
-#### Vulkan: 
-`gpu = 'vulkan'`
-  * **Don't expect Vulkan to work.**
-  * *Vulkan v2 (rewrite) doesn't do anything yet.*
+#### [ROV (rasterizer-ordered views)](https://github.com/xenia-project/xenia/wiki/FAQ#what-is-rov):
+| `d3d12_edram_rov` =              | `bool`
+| -------------------              | ------
+| On *(if available)*              | `true`
+| Off *(recommended for AMD GPUs)* | `false`
 
+### Input:
+
+#### HID
+| `hid` =         | `string`
+| -------         | --------
+| Any *(default)* | `any`
+| SDL2 **(needed for non-XInput controllers, requires [DLL](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/SDL2.zip?branch=master&job=Configuration:%20Release&pr=false))** | `sdl`
+| XInput          | `xinput`
+| Keyboard        | `winkey`
 #
 ### All config options:
 ```
 [APU]
-apu = 'any'                             	# Audio system. Use: [any, nop, xaudio2]
+apu = 'any'                             	# Audio system. Use: [any, nop, sdl, xaudio2]
 libav_verbose = false                   	# Verbose libav output (debug and above)
 mute = false                            	# Mutes all audio output.
 
@@ -74,6 +95,8 @@ break_condition_value = 0               	# value compared against
 break_on_debugbreak = true              	# int3 on JITed __debugbreak requests.
 break_on_instruction = 0                	# int3 before the given guest address is executed.
 break_on_start = false                  	# Break into the debugger on startup.
+clock_no_scaling = false                	# Disable scaling code. Time management and locking is bypassed. Guest system time is directly pulled from host.
+clock_source_raw = false                	# Use the RDTSC instruction as the time source. Host CPU must support invariant TSC. 
 cpu = 'any'                             	# CPU backend [any, x64].
 debug_symbol_loader = false             	# Enable dbghelp debug logging and validation.
 debugprint_trap_log = false             	# Log debugprint traps to the active debugger
@@ -98,18 +121,19 @@ license_mask = 0                        	# Set license mask for activated conten
 [D3D12]
 d3d12_16bit_rtv_full_range = true       	# Use full -32...32 range for RG16 and RGBA16 render targets (at the expense of blending correctness) without ROV.
 d3d12_adapter = -1                      	# Index of the DXGI adapter to use. -1 for any physical adapter, -2 for WARP software rendering.
-d3d12_convert_quads_to_triangles = false	# Convert quad lists to triangle lists on the CPU instead of using a geometry shader. Not recommended for playing, for debugging primarily (because PIX fails to display vertices when a geometry shader is used).
+d3d12_convert_quads_to_triangles = false	# Convert quad lists to triangle lists on the CPU instead of using a geometry shader. Not recommended for playing, for debugging primarily (because PIX fails to display vertices when a geometry shader is used), and this way quads can't be discarded correctly when the game uses vertex kill functionality.
 d3d12_debug = false                     	# Enable Direct3D 12 and DXGI debug layer.
 d3d12_dxbc_disasm = false               	# Disassemble DXBC shaders after generation.
 d3d12_edram_rov = true                  	# Use rasterizer-ordered views for render target emulation where available.
 d3d12_half_pixel_offset = true          	# Enable half-pixel vertex and VPOS offset.
-d3d12_pipeline_creation_threads = -1    	# Number of threads used for graphics pipeline state creation. -1 to calculate automatically (75% of logical CPU cores), 1-16 to specify the number of threads explicitly, 0 to disable multithreaded pipeline state creation.
+d3d12_pipeline_creation_threads = -1    	# Number of threads used for graphics pipeline state object creation. -1 to calculate automatically (75% of logical CPU cores), a positive number to specify the number of threads explicitly (up to the number of logical CPU cores), 0 to disable multithreaded pipeline state object creation.
 d3d12_random_clear_color = false        	# Randomize presentation back buffer clear color.
 d3d12_readback_memexport = false        	# Read data written by memory export in shaders on the CPU. This may be needed in some games (but many only access exported data on the GPU, and this flag isn't needed to handle such behavior), but causes mid-frame synchronization, so it has a huge performance impact.
 d3d12_readback_resolve = false          	# Read render-to-texture results on the CPU. This may be needed in some games, for instance, for screenshots in saved games, but causes mid-frame synchronization, so it has a huge performance impact.
 d3d12_resolution_scale = 1              	# Scale of rendering width and height (currently only 1 and 2 are available).
 d3d12_resolution_scale_resolve_edge_clamp = true	# When using resolution scale, apply the hack that duplicates the right/lower subpixel in the left and top sides of render target resolve areas to eliminate the gap caused by half-pixel offset (this is necessary for certain games like GTA IV to work).
 d3d12_ssaa_custom_sample_positions = false	# Enable custom SSAA sample positions for the RTV/DSV rendering path where available instead of centers (experimental, not very high-quality).
+d3d12_submit_on_primary_buffer_end = true	# Submit the command list when a PM4 primary buffer ends if it's possible to submit immediately to try to reduce frame latency.
 d3d12_tessellation_adaptive = false     	# Allow games to use adaptive tessellation - may be disabled if the game has issues with memexport, the maximum factor will be used in this case. Temporarily disabled by default since there are visible cracks currently in Halo 3.
 d3d12_tessellation_wireframe = false    	# Display tessellated surfaces as wireframe for debugging.
 d3d12_texture_cache_limit_hard = 768    	# Maximum host texture memory usage (in megabytes) above which textures will be destroyed as soon as possible. If using 2x resolution scale, 1.25x of this is used.
@@ -120,11 +144,13 @@ dxbc_source_map = false                 	# Disassemble Xenos instructions as com
 dxbc_switch = true                      	# Use switch rather than if for flow control. Turning this off or on may improve stability, though this heavily depends on the driver - on AMD, it's recommended to have this set to true, as Halo 3 appears to crash when if is used for flow control (possibly the shader compiler tries to flatten them). On Intel HD Graphics, this is ignored because of a crash with the switch instruction.
 
 [GPU]
-dump_shaders = ''                       	# Path to write GPU shaders to as they are compiled.
+dump_shaders = ''                       	# For shader debugging, path to dump GPU shaders to as they are compiled.
 fullscreen = false                      	# Toggles fullscreen
 gpu = 'any'                             	# Graphics system. Use: [any, d3d12, vulkan, vk, null]
+gpu_allow_invalid_fetch_constants = false	# Allow texture and vertex fetch constants with invalid type - generally unsafe because the constant may contain completely invalid values, but may be used to bypass fetch constant type errors in certain games until the real reason why they're invalid is found.
 spv_disasm = false                      	# Disassemble SPIR-V shaders after generation
 spv_validate = false                    	# Validate SPIR-V shaders after generation
+store_shaders = true                    	# Store shaders persistently and load them when loading games to avoid runtime spikes and freezes when playing the game not for the first time.
 texture_dump = false                    	# Dump textures to DDS
 trace_gpu_prefix = 'scratch/gpu/'       	# Prefix path for GPU trace files.
 trace_gpu_stream = false                	# Trace all GPU packets.
@@ -133,10 +159,11 @@ vsync = true                            	# Enable VSYNC.
 [General]
 debug = false                           	# Allow debugging and retain debug information.
 discord = true                          	# Enable Discord rich presence
+launch_module = ''                      	# Executable to launch from the .iso or the package instead of default.xex or the module specified by the game. Leave blank to launch the default module.
 time_scalar = 1.000000                  	# Scalar used to speed or slow time (1x, 2x, 1/2x, etc).
 
 [HID]
-hid = 'any'                             	# Input system. Use: [any, nop, winkey, xinput]
+hid = 'any'                             	# Input system. Use: [any, nop, sdl, winkey, xinput]
 
 [Kernel]
 cl = ''                                 	# Specify additional command-line provided to guest.
@@ -162,10 +189,14 @@ protect_on_release = false              	# Protect released memory to prevent ac
 protect_zero = true                     	# Protect the zero page from reads and writes.
 scribble_heap = false                   	# Scribble 0xCD into all allocated heap memory.
 
+[SDL]
+mappings_file = 'gamecontrollerdb.txt'  	# Filename of a database with custom game controller mappings.
+
 [Storage]
-content_root = ''                       	# Root path for content (save/etc) storage.
+content_root = ''                       	# Root path for guest content storage (saves, etc.), or empty to use the content folder under the storage root.
 mount_cache = false                     	# Enable cache mount
 mount_scratch = false                   	# Enable scratch mount
+storage_root = ''                       	# Root path for persistent internal data storage (config, etc.), or empty to use the path preferred for the OS, such as the documents folder, or the emulator executable directory if portable.txt is present in it.
 
 [UI]
 headless = false                        	# Don't display any UI, using defaults for prompts as needed.
