@@ -99,7 +99,7 @@ Xenia does not support System Link either.
 With an FPS indicator like [Rivatuner](https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html).
 #
 ### What is ROV?
-Improves performance and accuracy. Enabled by default on supported GPUs. Recommended to be [disabled](https://github.com/xenia-project/xenia/wiki/Options/#disable-rov-rasterizer-ordered-views) for AMD GPUs.
+Improves performance and accuracy. Enabled by default on supported GPUs. Recommended to be [disabled](https://github.com/xenia-project/xenia/wiki/Options#rov-rasterizer-ordered-views) for AMD GPUs.
 
 <details><summary>Long ROV (rasterizer-ordered views) explanation [click to expand]</summary>
 
