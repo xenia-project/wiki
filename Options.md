@@ -12,24 +12,23 @@
       ```
 #
 ### Options:
-
-#### Run games as full/activated
+#### Run games as full/activated:
 | `license_mask` =                        | `#`
 | ----------------                        | ---
 | Deactivated/trial/demo mode *(default)* | `0`
 | Activated/full mode                     | `-1` or `1`
 
-#### Game language
+#### Game language:
 | `user_language` =                 | `#`
 | -----------------                 | :-:
 | EN (English, *default*)           | `1`
-| JA (Japanese/日本語)              | `2`
+| JA (Japanese/日本語)               | `2`
 | DE (German/Deutsche)              | `3`
 | FR (French/Français)              | `4`
 | ES (Spanish/Español)              | `5`
 | IT (Italian/Italiano)             | `6`
-| KO (Korean/한국인)                | `7`
-| ZH (Traditional Chinese/繁體中文) | `8`
+| KO (Korean/한국인)                 | `7`
+| ZH (Traditional Chinese/繁體中文)  | `8`
 | PT (Portuguese/Português)         | `9`
 | PL (Polish/Polskie)               | `11`
 | RU (Russian/русский)              | `12`
@@ -40,8 +39,29 @@
 | ZH (Simplified Chinese/简体中文)   | `17`
 
 ### GPU:
+#### D3D12:
+##### [ROV (rasterizer-ordered views)](https://github.com/xenia-project/xenia/wiki/FAQ#what-is-rov):
+| `d3d12_edram_rov` =              | `bool`
+| -------------------              | ------
+| On *(if available)*              | `true`
+| Off *(recommended for AMD GPUs)* | `false`
 
-#### Renderer/Backend:
+##### Resolution scaling ***(REQUIRES ROV)***:
+| `d3d12_resolution_scale` = | `#`
+| -------------------------- | ---
+| 1x (*default*, 1280x720)   | `1`
+| 2x (2560x1440)             | `2`
+
+#### Misc:
+##### Vsync:
+| `vsync` =          | `bool`
+| ---------          | ------
+| On *(default)*     | `true`
+| Off *(uncaps FPS)* | `false`
+  * *This won't improve the framerate if your PC can't handle running the game at it's native FPS.*
+  * *This doesn't work with all games, including Halo 3/ODST/Reach/4.*
+
+##### Renderer/Backend:
 | `gpu` =                           | `string`
 | -------                           | -------
 | Any *(default, **recommended**)*  | `any`
@@ -50,29 +70,7 @@
 | Vulkan rewrite *(non-functional)* | `vk`
 | Null *(blank/nothing)*            | `null`
 
-#### Resolution scaling ***(REQUIRES ROV)***:
-| `d3d12_resolution_scale` = | `#`
-| -------------------------- | ---
-| 1x (*default*, 1280x720)   | `1`
-| 2x (2560x1440)             | `2`
-
-#### Vsync:
-| `vsync` =          | `bool`
-| ---------          | ------
-| On *(default)*     | `true`
-| Off *(uncaps FPS)* | `false`
-  * *This won't improve the framerate if your PC can't handle running the game at it's native FPS.*
-  * *This doesn't work with the Halo games.*
-
-#### [ROV (rasterizer-ordered views)](https://github.com/xenia-project/xenia/wiki/FAQ#what-is-rov):
-| `d3d12_edram_rov` =              | `bool`
-| -------------------              | ------
-| On *(if available)*              | `true`
-| Off *(recommended for AMD GPUs)* | `false`
-
-### Input:
-
-#### HID
+### HID (Input):
 | `hid` =         | `string`
 | -------         | --------
 | Any *(default)* | `any`
