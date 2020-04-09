@@ -71,12 +71,12 @@
 | Null *(blank/nothing)*            | `null`
 
 ### HID (Input):
-| `hid` =         | `string`
-| -------         | --------
-| Any *(default)* | `any`
-| SDL2 **(needed for non-XInput controllers, requires [DLL](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/SDL2.zip?branch=master&job=Configuration:%20Release&pr=false))** | `sdl`
-| XInput          | `xinput`
-| Keyboard        | `winkey`
+| `hid` =                                      | `string`
+| -------                                      | --------
+| Any *(default)*                              | `any`
+| SDL2 **(needed for non-XInput controllers)** | `sdl`
+| XInput                                       | `xinput`
+| Keyboard                                     | `winkey`
 #
 ### All config options:
 ```
