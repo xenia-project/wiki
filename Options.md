@@ -32,9 +32,9 @@
 | PT (Portuguese/Português)         | `9`
 | PL (Polish/Polskie)               | `11`
 | RU (Russian/русский)              | `12`
-| SV (?)                            | `13`
+| SV (Swedish/Svenska)              | `13`
 | TR (Turkish/Türk)                 | `14`
-| NB (?)                            | `15`
+| NB (Norwegian/Norsk)              | `15`
 | NL (Dutch/Nederlands)             | `16`
 | ZH (Simplified Chinese/简体中文)   | `17`
 
