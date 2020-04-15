@@ -17,8 +17,7 @@
   * You can check with [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
   * **Pentiums do not support AVX(2).**
 * GPU: Vulkan compatible GPU from [this list](https://vulkan.gpuinfo.org/) or D3D12 compatible GPU
-  * D3D12on7 is not supported, so only Vulkan will work on Windows 7.
-    * Windows 8.1 doesn't support D3D12 either.
+  * D3D12on7 and vkd3d are not supported, so only Vulkan will work on Windows 7/8.1 and WINE/Linux.
   * GPUs without ROV, and iGPUs in general will perform worse and possibly have more graphical issues.
     * AMD GPUs also fall under this due to limited ROV support.
 * RAM: 4GB
