@@ -1,14 +1,31 @@
 ### How do I use Xenia?
 Refer to the [Quickstart page](https://github.com/xenia-project/xenia/wiki/Quickstart).
-
 #
 ### What are Xenia's system requirements?
 Refer to the [Quickstart page](https://github.com/xenia-project/xenia/wiki/Quickstart#system-requirements).
-
 #
 ### How do I fix the VCRUNTIME error?
 Make sure you downloaded a **[Release build of Xenia](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia_master.zip?branch=master&job=Configuration:%20Release&pr=false)**, and download the **[latest x64 Microsoft Visual C++ Redistributable](https://aka.ms/vs/16/release/vc_redist.x64.exe)**.
+#
+### Can you add support for Windows Me? How about my Pentium II?
+Support for older operating systems and processors will not be added unless a
+contributor steps up to build and maintain them. All active contributors are on
+modern systems and busy with higher priority tasks. Whether the emulator runs on
+Windows Vista or not doesn't matter if it can't run games.
+#
+### Does Xenia run on Linux or macOS?
+Not natively, but Xenia runs with Wine on Linux.
 
+macOS is not compatible due to requiring MoltenVK support which isn't implemented in Xenia.
+#
+### How do I dump/rip games?
+See the guide in [Quickstart](https://github.com/xenia-project/xenia/wiki/Quickstart#How-to-rip-games).
+#### Why is my game in trial/demo mode?
+By default Xenia runs ALL XBLA/digital games in demo/trial mode.
+
+To run games in full/activated mode you need to change `license_mask = 0` to `-1` in `xenia.config.toml`.
+
+It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
 #
 ### How do I use xenia-vfs-dump?
 xenia-vfs-dump is a command-line tool use for dumping content from STFS and SVOD containers.
@@ -20,34 +37,7 @@ Usage: `xenia-vfs-dump [ContainerPath] [DestinationOutput]`
 <details><summary>Example GIF (click to expand)</summary>
 
 ![](https://cdn.discordapp.com/attachments/561407879823753217/686821806119845888/vfs.gif)
-
 </details>
-
-
-#
-### Can you add support for Windows Me? How about my Pentium II?
-Support for older operating systems and processors will not be added unless a
-contributor steps up to build and maintain them. All active contributors are on
-modern systems and busy with higher priority tasks. Whether the emulator runs on
-Windows Vista or not doesn't matter if it can't run games.
-
-#
-### Does Xenia run on Linux or macOS?
-Not natively, but Xenia runs with Wine on Linux.
-
-macOS is not compatible due to requiring MoltenVK support which isn't implemented in Xenia.
-
-#
-### How do I dump/rip games?
-See the guide in [Quickstart](https://github.com/xenia-project/xenia/wiki/Quickstart#How-to-rip-games).
-
-#### Why is my game in trial/demo mode?
-By default Xenia runs ALL XBLA/digital games in demo/trial mode.
-
-To run games in full/activated mode you need to change `license_mask = 0` to `-1` in `xenia.config.toml`.
-
-It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
-
 #
 ### Does game *X* run?
 Check the [compatibility list](https://github.com/xenia-project/game-compatibility#game-compatibility). If it's not there, ask in the [Discord #help channel](https://discord.gg/5g93S8H) or test it yourself.
@@ -56,7 +46,6 @@ Check the [compatibility list](https://github.com/xenia-project/game-compatibili
 To run those games you must use [Xenia Canary](https://github.com/xenia-canary/xenia-canary).
 
 Xenia Canary is a fork of Xenia with changes not present in master, such as the Unreal Engine workaround, etc.
-
 #
 ### Why aren't saves working? (Storage device not found/full/not detected, etc)
 Saves are broken in a majority of games in Xenia, especially ones with user profile saves.
@@ -65,7 +54,6 @@ As for saves, etc that worked previously in older builds of Xenia, create a text
 
 ### Where are saves stored?
 Saves are in `Documents\xenia\content` by default.
-
 #
 ### Input
 Xenia natively supports XInput controllers, which includes but is not limited to:
@@ -83,17 +71,14 @@ You can use the mouse to control the analog/joysticks, and rebind the keyboard c
 <details><summary>Default keyboard layout (click to expand)</summary>
 
 ![](https://cdn.discordapp.com/attachments/308207592482668545/437198231613734912/xenia_keyboard-layout.png)
-
 </details>
 
 Xenia does not support mice, accessories like the Kinect, uDraw GameTablet, or microphones.
-
 #
 ### Can Xenia play games online with Xbox Live?
 Xenia may connect to *custom* servers in the far future, but it will ***never*** connect to official Xbox Live servers.
 
 Xenia does not support System Link either.
-
 #
 ### How do I check my FPS?
 With an FPS indicator like [Rivatuner](https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html).
@@ -121,35 +106,28 @@ However, this is a hardware feature, and thus on older graphics cards, Xenia is 
   * Intel HD Graphics 4000 (2012)
 
 Rasterizer-ordered views are used by default in Xenia where available, but if you're experiencing graphical issues, you may try [disabling it in the config](https://github.com/xenia-project/xenia/wiki/Options/#disable-rov-rasterizer-ordered-views).
-
 </details>
 
 #
 ### What are all of Xenia's options?
 For all of Xenia's options, see the [Options page](https://github.com/xenia-project/xenia/wiki/Options).
-
 #
 ### What's the difference between Gameplay and Playable?
 Gameplay means the game reaches gameplay, even if the game is unplayable.
-
 #
 ### Can Xenia run OG (original) Xbox games?
 Xenia does not support OG Xbox games/BC (backwards compatibility).
 
 For that there's [Cxbx-Reloaded](https://github.com/Cxbx-Reloaded/Cxbx-Reloaded) and [xqemu](https://github.com/xqemu/xqemu).
-
 #
 ### I have a copy of the XDK. Do you want it?
 **No.** Do not post links or downloads to such resources or you will be banned.
-
 #
 ### Build tweaks
-
 #### 4:3
 To play games in 4:3 you need to build Xenia with `video_mode->is_widescreen = 0` instead of 1 [here](https://github.com/xenia-project/xenia/blob/master/src/xenia/kernel/xboxkrnl/xboxkrnl_video.cc#L138).
 
 *[Refer to building.md on GitHub](https://github.com/xenia-project/xenia/blob/master/docs/building.md)*
-
 #
 ### Hacks/mods
 Refer to the [Game hacks, mods, etc. page](https://github.com/xenia-project/xenia/wiki/Game-hacks,-mods,-etc).
