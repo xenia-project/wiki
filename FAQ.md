@@ -34,12 +34,9 @@ xenia-vfs-dump is a command-line tool use for dumping content from STFS and SVOD
 You can download it from [here](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia-vfs-dump_master.zip?branch=master&job=Configuration:%20Release&pr=false).
 
 Usage: `xenia-vfs-dump [ContainerPath] [DestinationOutput]`
-
 <details><summary>Example GIF (click to expand)</summary>
 
-![](https://cdn.discordapp.com/attachments/561407879823753217/686821806119845888/vfs.gif)
-</details>
-
+![](https://cdn.discordapp.com/attachments/561407879823753217/686821806119845888/vfs.gif)</details>
 #
 ### Does game *X* run?
 Check the [compatibility list](https://github.com/xenia-project/game-compatibility#game-compatibility). If it's not there, ask in the [Discord #help channel](https://discord.gg/5g93S8H) or test it yourself.
