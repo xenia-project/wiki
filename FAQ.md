@@ -5,7 +5,12 @@ Refer to the [Quickstart page](https://github.com/xenia-project/xenia/wiki/Quick
 Refer to the [Quickstart page](https://github.com/xenia-project/xenia/wiki/Quickstart#system-requirements).
 #
 ### How do I fix the VCRUNTIME error?
-Make sure you downloaded a **[Release build of Xenia](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia_master.zip?branch=master&job=Configuration:%20Release&pr=false)**, and download the **[latest x64 Microsoft Visual C++ Redistributable](https://aka.ms/vs/16/release/vc_redist.x64.exe)**.
+Refer to the [Quickstart page](https://github.com/xenia-project/xenia/wiki/Quickstart).
+#
+### How do I fix "Graphics device lost (probably due to an internal error"?
+You can try using [Vulkan](https://github.com/xenia-project/xenia/wiki/Options#rendererbackend) as a *workaround*, **but don't expect it to work**.
+
+Also try disabling [ROV](https://github.com/xenia-project/xenia/wiki/Options#rov-rasterizer-ordered-views) **especially if you have an AMD GPU**.
 #
 ### Can you add support for Windows Me? How about my Pentium II?
 Support for older operating systems and processors will not be added unless a
@@ -16,16 +21,12 @@ Windows Vista or not doesn't matter if it can't run games.
 ### Does Xenia run on Linux or macOS?
 Not natively, but Xenia runs with Wine on Linux.
 
-macOS is not compatible due to requiring MoltenVK support which isn't implemented in Xenia.
+macOS is not compatible due to requiring MoltenVK/Metal support which isn't implemented in Xenia.
 #
 ### How do I dump/rip games?
 See the guide in [Quickstart](https://github.com/xenia-project/xenia/wiki/Quickstart#How-to-rip-games).
 #### Why is my game in trial/demo mode?
-By default Xenia runs ALL XBLA/digital games in demo/trial mode.
-
-To run games in full/activated mode you need to change `license_mask = 0` to `-1` in `xenia.config.toml`.
-
-It will be in `Documents\Xenia` by default. If `portable.txt` is present it will be in the same directory as xenia.exe.
+See [this option](https://github.com/xenia-project/xenia/wiki/Options#Run_games_as_fullactivated).
 #
 ### How do I use xenia-vfs-dump?
 xenia-vfs-dump is a command-line tool use for dumping content from STFS and SVOD containers.
@@ -38,6 +39,7 @@ Usage: `xenia-vfs-dump [ContainerPath] [DestinationOutput]`
 
 ![](https://cdn.discordapp.com/attachments/561407879823753217/686821806119845888/vfs.gif)
 </details>
+
 #
 ### Does game *X* run?
 Check the [compatibility list](https://github.com/xenia-project/game-compatibility#game-compatibility). If it's not there, ask in the [Discord #help channel](https://discord.gg/5g93S8H) or test it yourself.
@@ -56,22 +58,14 @@ As for saves, etc that worked previously in older builds of Xenia, create a text
 Saves are in `Documents\xenia\content` by default.
 #
 ### Input
-Xenia natively supports XInput controllers, which includes but is not limited to:
-  * Xbox 360 Controller
-  * Xbox One Controller
+Xenia only supports XInput controllers by default, which includes but is not limited to Xbox 360, and Xbox One controllers.
 
-For non-XInput controllers, wrapper(s) will have to be used:
-  * [DS4Windows (Dualshock 4/PS4 controller)](https://github.com/Ryochan7/DS4Windows/releases)
-  * [x360ce *x64* (DInput/Generic Controller/M+KB)](https://www.x360ce.com/)
+For non-XInput controllers, [SDL](https://github.com/xenia-project/xenia/wiki/Options#HID_Input) must be used.
 
-If you have any problems with those you can also try launching Xenia via Steam.
-
-You can use the mouse to control the analog/joysticks, and rebind the keyboard controls ***with x360ce***.
-
+You can use the mouse to control the analog/joysticks, and rebind the keyboard controls ***with [x360ce](https://www.x360ce.com/)***.
 <details><summary>Default keyboard layout (click to expand)</summary>
 
-![](https://cdn.discordapp.com/attachments/308207592482668545/437198231613734912/xenia_keyboard-layout.png)
-</details>
+![](https://cdn.discordapp.com/attachments/308207592482668545/437198231613734912/xenia_keyboard-layout.png)</details>
 
 Xenia does not support mice, accessories like the Kinect, uDraw GameTablet, or microphones.
 #
@@ -105,9 +99,7 @@ However, this is a hardware feature, and thus on older graphics cards, Xenia is 
   * AMD Radeon Vega (GCN 5th generation — 2017)
   * Intel HD Graphics 4000 (2012)
 
-Rasterizer-ordered views are used by default in Xenia where available, but if you're experiencing graphical issues, you may try [disabling it in the config](https://github.com/xenia-project/xenia/wiki/Options/#disable-rov-rasterizer-ordered-views).
-</details>
-
+Rasterizer-ordered views are used by default in Xenia where available, but if you're experiencing graphical issues, you may try [disabling it in the config](https://github.com/xenia-project/xenia/wiki/Options/#disable-rov-rasterizer-ordered-views).</details>
 #
 ### What are all of Xenia's options?
 For all of Xenia's options, see the [Options page](https://github.com/xenia-project/xenia/wiki/Options).
