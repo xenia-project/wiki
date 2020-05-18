@@ -8,7 +8,7 @@ __TOC__
 #* If <code>portable.txt</code> is present it will be in the same directory as xenia.exe.
 #* Per-game configs go in <code>config\TitleID.config.toml</code>.
 # For launchers/frontends like [https://github.com/quinton-ashley/bottlenose Bottlenose] you can use the <code>--config</code> launch parameter to specify what config to use.
-#* To launch specific games, add the path to the game before the launch options. For example: <code>cmd     xenia.exe path/to/game/default.xex --vsync=false</code>
+#* To launch specific games, add the path to the game before the launch options. For example: <code>xenia.exe path/to/game/default.xex --vsync=false</code>
 
 = Options =
 
