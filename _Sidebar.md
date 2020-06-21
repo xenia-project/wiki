@@ -13,8 +13,8 @@
 
 #
 ### For Developers:
-  * [Building](https://github.com/xenia-project/xenia/blob/master/docs/building.md)
-  * [For Developers](https://github.com/xenia-project/xenia/wiki/For-Developers)
+  * [Building](../blob/master/docs/building.md)
+  * [For Developers](For-Developers)
   * [Roadmap](Roadmap)
-  * [Style Guide](https://github.com/xenia-project/xenia/blob/master/docs/style_guide.md)
-  * [More documentation](https://github.com/xenia-project/xenia/tree/master/docs)
+  * [Style Guide](../blob/master/docs/style_guide.md)
+  * [More documentation](../tree/master/docs)
