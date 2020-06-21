@@ -1,5 +1,5 @@
-[Home](https://github.com/xenia-project/xenia/wiki/Home)
----
+[Home](Home)
+------------
 
 ### Users:
   * [Quickstart](Quickstart)
@@ -7,7 +7,7 @@
     * [How to rip games](Quickstart#how-to-rip-games)
   * [FAQ](FAQ)
   * [Options](Options)
-  * [Compatibility List](../../game-compatibility/issues)
+  * [Compatibility List](../../game-compatibility#game-compatibility)
   * [About](About)
   * [Game hacks, mods, etc](Game-hacks,-mods,-etc)
 
