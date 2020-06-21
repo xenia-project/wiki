@@ -52,8 +52,11 @@ Saves are broken in a majority of games in Xenia, especially ones with user prof
 
 As for saves, etc that worked previously in older builds of Xenia, create a text file in the same directory as xenia.exe named `portable.txt`.
 
-### Where are saves stored?
+#### Where are saves stored?
 Saves are in `Documents\xenia\content` by default.
+
+#### How do I transer saves to/from Xenia?
+[TODO](How-to-transfer-saves-to-or-from-Xenia)
 #
 ### Input
 Xenia only supports XInput controllers by default, which includes but is not limited to Xbox 360, and Xbox One controllers.
