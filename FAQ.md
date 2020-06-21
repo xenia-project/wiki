@@ -1,16 +1,16 @@
 ### How do I use Xenia?
-Refer to the [Quickstart page](https://github.com/xenia-project/xenia/wiki/Quickstart).
+Refer to the [Quickstart page](Quickstart).
 #
 ### What are Xenia's system requirements?
-Refer to the [Quickstart page](https://github.com/xenia-project/xenia/wiki/Quickstart#system-requirements).
+Refer to the [Quickstart page](Quickstart#system-requirements).
 #
 ### How do I fix the VCRUNTIME error?
-Refer to the [Quickstart page](https://github.com/xenia-project/xenia/wiki/Quickstart).
+Refer to the [Quickstart page](Quickstart).
 #
 ### How do I fix "Graphics device lost (probably due to an internal error"?
-You can try using [Vulkan](https://github.com/xenia-project/xenia/wiki/Options#rendererbackend) as a *workaround*, **but don't expect it to work**.
+You can try using [Vulkan](Options#rendererbackend) as a *workaround*, **but don't expect it to work**.
 
-Also try disabling [ROV](https://github.com/xenia-project/xenia/wiki/Options#rov-rasterizer-ordered-views) **especially if you have an AMD GPU**.
+Also try disabling [ROV](Options#rov-rasterizer-ordered-views) **especially if you have an AMD GPU**.
 #
 ### Can you add support for Windows Me? How about my Pentium II?
 Support for older operating systems and processors will not be added unless a
@@ -20,14 +20,14 @@ Windows Vista or not doesn't matter if it can't run games.
 #
 ### Does Xenia run on Linux or macOS?
 Not natively, but Xenia runs with Wine on Linux.*
-  * [D3D12 will only work on Windows 10 due to vkd3d not being supported.](https://github.com/xenia-project/xenia/wiki/Quickstart#minimum)
+  * [D3D12 will only work on Windows 10 due to vkd3d not being supported.](Quickstart#minimum)
 
 macOS is not compatible due to requiring MoltenVK/Metal support which isn't implemented in Xenia.
 #
 ### How do I dump/rip games?
-See the guide in [Quickstart](https://github.com/xenia-project/xenia/wiki/Quickstart#How-to-rip-games).
+See the guide in [Quickstart](Quickstart#How-to-rip-games).
 #### Why is my game in trial/demo mode?
-See [this option](https://github.com/xenia-project/xenia/wiki/Options#Run_games_as_fullactivated).
+See [this option](Options#Run_games_as_fullactivated).
 #
 ### How do I use xenia-vfs-dump?
 xenia-vfs-dump is a command-line tool use for dumping content from STFS and SVOD containers.
@@ -61,7 +61,7 @@ Saves are in `Documents\xenia\content` by default.
 ### Input
 Xenia only supports XInput controllers by default, which includes but is not limited to Xbox 360, and Xbox One controllers.
 
-For non-XInput controllers, [SDL](https://github.com/xenia-project/xenia/wiki/Options#HID_Input) must be used.
+For non-XInput controllers, [SDL](Options#HID_Input) must be used.
 
 You can use the mouse to control the analog/joysticks, and rebind the keyboard controls ***with [x360ce](https://www.x360ce.com/)***.
 <details><summary>Default keyboard layout (click to expand)</summary>
@@ -79,7 +79,7 @@ Xenia does not support System Link either.
 With an FPS indicator like [Rivatuner](https://www.guru3d.com/files-details/rtss-rivatuner-statistics-server-download.html).
 #
 ### What is ROV?
-Improves performance and accuracy. Enabled by default on supported GPUs. Recommended to be [disabled](https://github.com/xenia-project/xenia/wiki/Options#rov-rasterizer-ordered-views) for AMD GPUs.
+Improves performance and accuracy. Enabled by default on supported GPUs. Recommended to be [disabled](Options#rov-rasterizer-ordered-views) for AMD GPUs.
 
 <details><summary>Long ROV (rasterizer-ordered views) explanation [click to expand]</summary>
 
@@ -100,10 +100,10 @@ However, this is a hardware feature, and thus on older graphics cards, Xenia is 
   * AMD Radeon Vega (GCN 5th generation — 2017)
   * Intel HD Graphics 4000 (2012)
 
-Rasterizer-ordered views are used by default in Xenia where available, but if you're experiencing graphical issues, you may try [disabling it in the config](https://github.com/xenia-project/xenia/wiki/Options/#disable-rov-rasterizer-ordered-views).</details>
+Rasterizer-ordered views are used by default in Xenia where available, but if you're experiencing graphical issues, you may try [disabling it in the config](Options/#disable-rov-rasterizer-ordered-views).</details>
 #
 ### What are all of Xenia's options?
-For all of Xenia's options, see the [Options page](https://github.com/xenia-project/xenia/wiki/Options).
+For all of Xenia's options, see the [Options page](Options).
 #
 ### What's the difference between Gameplay and Playable?
 Gameplay means the game reaches gameplay, even if the game is unplayable.
@@ -123,4 +123,4 @@ To play games in 4:3 you need to build Xenia with `video_mode->is_widescreen = 0
 *[Refer to building.md on GitHub](https://github.com/xenia-project/xenia/blob/master/docs/building.md)*
 #
 ### Hacks/mods
-Refer to the [Game hacks, mods, etc. page](https://github.com/xenia-project/xenia/wiki/Game-hacks,-mods,-etc).
+Refer to the [Game hacks, mods, etc. page](Game-hacks,-mods,-etc).
