@@ -14,10 +14,10 @@
 * CPU: 64-bit x86 processor with AVX(2) support
   * You can check with [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
   * **Pentiums and Celerons do not support AVX(2).**
-* GPU: Vulkan compatible GPU from [this list](https://vulkan.gpuinfo.org/) or D3D12 compatible GPU
-  * D3D12 will only work on Windows 10 due to D3D12on7 and vkd3d not being supported.
-  * GPUs without ROV, and iGPUs in general will perform worse and possibly have more graphical issues.
-    * AMD GPUs also fall under this due to limited ROV support.
+* GPU: Direct3D 12-compatible or Vulkan-compatible GPU from [this list](https://vulkan.gpuinfo.org/)
+  * Direct3D 12 will only work on Windows 10 due to D3D12on7 and vkd3d not being supported.
+  * GPUs without [ROV (rasterizer-ordered view) / fragment shader interlock](https://github.com/xenia-project/xenia/wiki/FAQ#what-is-rov) support will perform worse and possibly have more graphical issues. Integrated GPUs will also generally provide too low frame rates for comfortable playing.
+    * AMD GPUs also fall under this due to Xenia triggering driver bugs causing crashes when its ROV-based rendering path is used.
 * RAM: 4GB
 * [2017/2019 x64 Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
