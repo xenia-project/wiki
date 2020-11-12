@@ -124,7 +124,7 @@ Xbox Dashboard:
         * Minecraft
         * Pocket Bike Racers
         * Sneak King
-        * Crackdown
+        * Crackdown (Can be installed with latest title update)
         * Dead or Alive Xtreme 2
 5. Select the storage device you want to install the game on.
 6. Once it's 100% Completed press A to continue, and press B to go back to home.
