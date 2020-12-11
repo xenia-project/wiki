@@ -95,12 +95,15 @@ Using the Rasterizer-Ordered Views (ROV) feature of Direct3D 12 allows Xenia to 
 
 "Rasterizer-ordered" here means that access to the buffer is synchronized — if multiple polygons in a single draw call are covering the same pixel, the buffer will be accessed in the correct order, without conflicts that would happen if the data was written through a regular unordered access view (UAV). You can read more about this feature at https://software.intel.com/en-us/gamedev/articles/rasterizer-order-views-101-a-primer, another common use for ROV in game development is order-independent transparency algorithms.
 
-However, this is a hardware feature, and thus on older graphics cards, Xenia is limited to the RT path. The minimum requirements for ROV are:
+However, this is a hardware feature, and thus on older graphics cards, Xenia is limited to the RT path.
+
+Rasterizer-ordered views are used by default in Xenia where available, but if you're experiencing graphical issues, you may try [disabling it in the config](Options/#disable-rov-rasterizer-ordered-views).</details>
+
+The minimum requirements for ROV are:
   * Nvidia GeForce GTX 950 on desktops, GTX 965M on laptops (Maxwell 2nd generation — 2014)
   * AMD Radeon Vega (GCN 5th generation — 2017)
   * Intel HD Graphics 4000 (2012)
 
-Rasterizer-ordered views are used by default in Xenia where available, but if you're experiencing graphical issues, you may try [disabling it in the config](Options/#disable-rov-rasterizer-ordered-views).</details>
 #
 ### What are all of Xenia's options?
 For all of Xenia's options, see the [Options page](Options).
