@@ -147,9 +147,6 @@ __TOC__
 | Vulkan ''(not recommended)''
 | <code>vulkan</code>
 |-
-| Vulkan rewrite ''(non-functional)''
-| <code>vk</code>
-|-
 | Null ''(blank/nothing)''
 | <code>null</code>
 |}
@@ -265,7 +262,7 @@ ignore_thread_priorities = true             # Ignores game-specified thread prio
 kernel_cert_monitor = false                 # Enable cert monitor.
 kernel_debug_monitor = false                # Enable debug monitor.
 kernel_display_gamma_power = 2.222222       # Display gamma to use with kernel_display_gamma_type 3.
-kernel_display_gamma_type = 1               # Display gamma type: 0 - linear, 1 - sRGB, 2 - TV (BT.709), 3 - power specified via kernel_display_gamma_power.
+kernel_display_gamma_type = 2               # Display gamma type: 0 - linear, 1 - sRGB, 2 - TV (BT.709), 3 - power specified via kernel_display_gamma_power.
 kernel_pix = false                          # Enable PIX.
 log_high_frequency_kernel_calls = false     # Log kernel calls with the kHighFrequency tag.
 win32_high_freq = true                      # Requests high performance from the NT kernel
