@@ -174,25 +174,32 @@ Once it's done you can take the USB out of the console.
 To run games in full/activated mode you need to change [this option](https://github.com/xenia-project/xenia/wiki/Options#Run_games_as_fullactivated).
 
 # How to install DLCs
-  1. Identify what the Game Title ID is.
+1. Identify what the Game Title ID is.
 This can be identified by running the game in Xenia.
+
 <details><summary>Image (click to expand)</summary>
 
 ![](https://i.imgur.com/fc0rmSc.png)</details>
-  2. Locate your DLC Content folder from your removable storage.
+
+2. Locate your DLC Content folder from your removable storage.
+
 <details><summary>Image (click to expand)</summary>
 
 ![](https://i.imgur.com/t8IMZiG.png)</details>
-  3. Download Velocity from [here](https://github.com/Gualdimar/Velocity/releases).
-  4. Open the Packages with Velocity.
+
+3. Download Velocity from [here](https://github.com/Gualdimar/Velocity/releases).
+
+4. Open the Packages with Velocity.
+
 <details><summary>Image (click to expand)</summary>
 
 ![](https://i.imgur.com/7q7q0oB.png)</details>
-  5. Extract the content packages
+
+5. Extract the content packages
 <details><summary>Image (click to expand)</summary>
 
 ![](https://i.imgur.com/WyA4yhm.png)</details>
-  to `Documents\Xenia\TitleID\00000002` and their corresponding folder names.
+to `Documents\Xenia\TitleID\00000002` and their corresponding folder names.
 <details><summary>Image (click to expand)</summary>
 
 ![](https://i.imgur.com/e4zk397.png)</details>
