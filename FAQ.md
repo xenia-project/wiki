@@ -44,7 +44,7 @@ Check the [compatibility list](https://github.com/xenia-project/game-compatibili
 
 #
 ### Why aren't saves working? (Storage device not found/full/not detected, etc)
-Saves are broken in a somee of games in Xenia, especially ones with user profile saves.
+Saves are broken in some of games in Xenia, especially ones with user profile saves.
 
 As for saves, etc that worked previously in older builds of Xenia, create a text file in the same directory as xenia.exe named `portable.txt`.
 
