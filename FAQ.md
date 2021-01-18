@@ -42,13 +42,9 @@ Usage: `xenia-vfs-dump [ContainerPath] [DestinationOutput]`
 ### Does game *X* run?
 Check the [compatibility list](https://github.com/xenia-project/game-compatibility#game-compatibility). If it's not there, ask in the [Discord #help channel](https://discord.gg/5g93S8H) or test it yourself.
 
-### How do I run Fable II, Gears of War, etc?
-To run those games you must use [Xenia Canary](https://github.com/xenia-canary/xenia-canary).
-
-Xenia Canary is a fork of Xenia with changes not present in master, such as the Unreal Engine workaround, etc.
 #
 ### Why aren't saves working? (Storage device not found/full/not detected, etc)
-Saves are broken in a majority of games in Xenia, especially ones with user profile saves.
+Saves are broken in a somee of games in Xenia, especially ones with user profile saves.
 
 As for saves, etc that worked previously in older builds of Xenia, create a text file in the same directory as xenia.exe named `portable.txt`.
 
