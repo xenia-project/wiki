@@ -85,27 +85,25 @@ __TOC__
 
 === D3D12 ===
 
-==== ROV (rasterizer-ordered views) ====
+==== Render target path ====
 
 [https://github.com/xenia-project/xenia/wiki/FAQ#what-is-rov What is ROV (rasterizer-ordered views)?]
 
 {|
-! <code>d3d12_edram_rov</code> =
-! <code>bool</code>
+! <code>render_target_path_d3d12</code> =
+! <code>string</code>
 |-
-| On ''(if available)''
-| <code>true</code>
+| RTV ''(recommended)''
+| <code>rtv</code>
 |-
-| Off ''(recommended for AMD GPUs)''
-| <code>false</code>
+| ROV ''(if available)''
+| <code>rov</code>
 |}
 
 ==== Resolution scaling ====
 
-'''''REQUIRES ROV!'''''
-
 {|
-! <code>d3d12_resolution_scale</code> =
+! <code>draw_resolution_scale</code> =
 ! <code>#</code>
 |-
 | 1x (''default'', 1280x720)
@@ -113,6 +111,9 @@ __TOC__
 |-
 | 2x (2560x1440)
 | <code>2</code>
+|-
+| 3x (3840x2160)
+| <code>3</code>
 |}
 
 ==== CPU readback resolve ====
@@ -165,8 +166,8 @@ __TOC__
 | Direct3D 12
 | <code>d3d12</code>
 |-
-| Vulkan ''(not recommended)''
-| <code>vulkan</code>
+| <s>Vulkan ''('''not''' recommended)''</s>
+| <s><code>vulkan</code></s>
 |-
 | Null ''(blank/nothing)''
 | <code>null</code>
