@@ -89,14 +89,16 @@ __TOC__
 
 [https://github.com/xenia-project/xenia/wiki/FAQ#what-is-rov What is ROV (rasterizer-ordered views)?]
 
+Leave this option blank for auto-selection.
+
 {|
 ! <code>render_target_path_d3d12</code> =
 ! <code>string</code>
 |-
-| RTV ''(recommended)''
+| RTV ''(recommended for speed)''
 | <code>rtv</code>
 |-
-| ROV ''(if available)''
+| ROV ''(if available, for higher accuracy in certain cases)''
 | <code>rov</code>
 |}
 
