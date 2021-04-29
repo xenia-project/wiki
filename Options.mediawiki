@@ -116,7 +116,7 @@ __TOC__
 | <code>3</code>
 |}
 
-==== CPU readback resolve ====
+==== CPU readback after render target resolving ====
 
 * This is needed for certain games, including but not limited to:
 ** Orange Box (text/save icons)
