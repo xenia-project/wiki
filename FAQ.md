@@ -8,9 +8,9 @@ Refer to the [Quickstart page](Quickstart#system-requirements).
 Refer to the [Quickstart page](Quickstart).
 #
 ### How do I fix "Graphics device lost (probably due to an internal error"?
-You can try using [Vulkan](Options#rendererbackend) as a *workaround*, **but don't expect it to work**.
+~~Try using [Vulkan](Options#rendererbackend) as a *workaround*, **but don't expect it to work**.~~
 
-Also try disabling [ROV](Options#rov-rasterizer-ordered-views) **especially if you have an AMD GPU**.
+Try disabling [ROV](Options#Render_target_path) **especially if you have an AMD GPU**.
 #
 ### Can you add support for Windows Me? How about my Pentium II?
 Support for older operating systems and processors will not be added unless a
@@ -51,7 +51,7 @@ As for saves, etc that worked previously in older builds of Xenia, create a text
 #### Where are saves stored?
 Saves are in `Documents\xenia\content` by default.
 
-#### How do I transer saves to/from Xenia?
+#### How do I transfer saves to/from Xenia?
 [TODO](How-to-transfer-saves-to-or-from-Xenia)
 #
 ### Input
