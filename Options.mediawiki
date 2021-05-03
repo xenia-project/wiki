@@ -184,7 +184,7 @@ Leave this option blank for auto-selection.
 | Any ''(default)''
 | <code>any</code>
 |-
-| SDL2 ''(needed for non-XInput controllers, '''DOES NOT REQUIRE DLL''')''
+| SDL2* ''(needed for non-XInput controllers, '''DOES NOT REQUIRE DLL''')''
 | <code>sdl</code>
 |-
 | XInput
@@ -193,3 +193,4 @@ Leave this option blank for auto-selection.
 | Keyboard
 | <code>winkey</code>
 |}
+*When using SDL: If your game controller is not mapped correctly, [https://github.com/gabomdq/SDL_GameControllerDB/blob/master/gamecontrollerdb.txt download gamecontrollerdb.txt] and place it in the folder next to your xenia executable.
