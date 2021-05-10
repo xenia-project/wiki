@@ -173,6 +173,15 @@ Once it's done you can take the USB out of the console.
 
 To run games in full/activated mode you need to change [this option](https://github.com/xenia-project/xenia/wiki/Options#Run_games_as_fullactivated).
 
+## Redump method (rare/specific drives)
+*For these DVD drives:*
+  * SH-D163A / TS-H353A
+  * SH-D163B / TS-H353B
+  * SH-162C / TS-H352C / SD-M2012C(?)
+  * SH-D162D / TS-H352D
+
+***IF YOUR DRIVE IS NOT LISTED HERE IT WILL NOT WORK!***
+
 # How to install DLCs
 1. Identify what the Game Title ID is.
 This can be identified by running the game in Xenia.
@@ -203,14 +212,5 @@ to `Documents\Xenia\TitleID\00000002` and their corresponding folder names.
 <details><summary>Image (click to expand)</summary>
 
 ![](https://i.imgur.com/e4zk397.png)</details>
-
-## Redump method (rare/specific drives)
-*For these DVD drives:*
-  * SH-D163A / TS-H353A
-  * SH-D163B / TS-H353B
-  * SH-162C / TS-H352C / SD-M2012C(?)
-  * SH-D162D / TS-H352D
-
-***IF YOUR DRIVE IS NOT LISTED HERE IT WILL NOT WORK!***
 
 *http://wiki.redump.org/index.php?title=Microsoft_Xbox_and_Xbox_360_Dumping_Guide*
