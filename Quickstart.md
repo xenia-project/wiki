@@ -1,13 +1,18 @@
 # System Requirements
+
 **Meeting recommended specifications won't guarantee perfect performance.**
+
 ## Recommended:
+
 * OS: Windows 10 x64
 * CPU: 4th generation or later i5/i7 64-bit x86 processor with AVX(2) support
   * You can check with [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
 * GPU: GTX 980 Ti or later
 * RAM: 6GB or more
 * [Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019](https://aka.ms/vs/16/release/vc_redist.x64.exe)
+
 ### Minimum:
+
 * OS: Windows 7+ x64 (Linux/macOS not *natively* supported)
   * **Windows <10 support is limited. *Don't expect anything to work.***
   * Runs on Linux with Wine.
@@ -16,8 +21,8 @@
   * **Pentiums and Celerons do not support AVX(2).**
 * GPU: Direct3D 12-compatible or Vulkan-compatible GPU from [this list](https://vulkan.gpuinfo.org/)
   * Direct3D 12 will only work on Windows 10 due to D3D12on7 and vkd3d not being supported.
-  * GPUs without [ROV (rasterizer-ordered view) / fragment shader interlock](https://github.com/xenia-project/xenia/wiki/FAQ#what-is-rov) support will perform worse and possibly have more graphical issues. Integrated GPUs will also generally provide too low frame rates for comfortable playing.
-    * AMD GPUs also fall under this due to Xenia triggering driver bugs causing crashes when its ROV-based rendering path is used.
+  * GPUs without [ROV (rasterizer-ordered view) / fragment shader interlock](FAQ#what-is-rov) support will perform worse and possibly have more graphical issues. Integrated GPUs will also generally provide frame rates too low for comfortable playing.
+    * AMD GPUs also fall under this due to Xenia triggering driver bugs causing crashes.
 * RAM: 4GB
 * [2017/2019 x64 Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads)
 
@@ -36,6 +41,7 @@ Windows Update tends to lag behind, so download GPU drivers from your manufactur
   * **[Intel](https://downloadcenter.intel.com/product/80939/Graphics-Drivers)**
 
 ## Where do I download Xenia?
+
   * **[Master](https://ci.appveyor.com/api/projects/benvanik/xenia/artifacts/xenia_master.zip?branch=master&job=Configuration:%20Release&pr=false)**
   * *[Canary](https://github.com/xenia-canary/xenia-canary/releases/latest/download/xenia_canary.zip)*
 
@@ -43,12 +49,16 @@ Xenia is sometimes detected as a virus. Ignore this, as it is a false positive.
 
 Xenia Canary is a fork of Xenia with changes not present in master, such as the Unreal Engine workaround, etc.
 
-For more information: https://github.com/xenia-canary/xenia-canary/wiki/FAQ
+For more information: [[FAQ]]
 
 # How to rip games
-**YOU CANNOT PLAY GAMES DIRECTLY FROM THE DISC DRIVE, OR USE AN XBOX ONE TO RIP GAMES!**
+
+**YOU CANNOT PLAY GAMES DIRECTLY FROM THE DISC DRIVE, OR USE AN XBOX ONE/SERIES TO RIP GAMES!**
+
 ## Stock console method
+
 ### Requirements
+
 * Xbox 360 console
 * USB storage device that's at least 16GB. You *might* encounter problems with smaller devices.
 * [Velocity](https://github.com/Gualdimar/Velocity/releases/download/xex%2Biso-branch/Velocity-XEXISO.rar)
@@ -87,9 +97,10 @@ Select Yes:
 5. Once done, return to home by pressing B twice.
 
 ### Section 1. Ripping discs
+
 *If your game isn't a disc (XBLA, digital, etc.) skip to Section 2.*
 
-You'll want to change these options to stop game(s) from automatically starting: 
+You'll want to change these options to stop game(s) from automatically starting:
   * *[Settings > System](https://i.imgur.com/xcCn6fM.png) > [Console Settings](https://i.imgur.com/FStw2Y7.png) > [Auto-Play](https://i.imgur.com/r4lLczk.png) > [Disable](https://i.imgur.com/V5oEdQl.png)*
 <details><summary>Images (click to expand)</summary>
 
@@ -130,6 +141,7 @@ Xbox Dashboard:
 6. Once it's 100% Completed press A to continue, and press B to go back to home.
 
 ### Section 2. Transferring HDD games
+
 ***If you ripped the game(s) directly to the USB drive, or they're already on the USB drive, you can skip this section.***
 1. Go to *[Settings > System](https://i.imgur.com/xcCn6fM.png) > [Storage](https://i.imgur.com/No4y9xi.png) > [Hard Drive](https://i.imgur.com/8EB0EFr.png) > [Press Y (Device Options)](https://i.imgur.com/rRaoeAR.png) > [Transfer Content](https://i.imgur.com/wdvYqDR.png) > [USB Storage Device](https://i.imgur.com/6FVly57.png)*
 4. Choose what you want to transfer. Keep in mind full games and trials/demos are in separate categories.
@@ -155,6 +167,7 @@ Start:
 Once it's done you can take the USB out of the console.
 
 ### Section 3. Importing games for use in Xenia
+
 1. Insert the USB drive into your PC. Go to `Content`.
     * If the USB drive appears empty enable *[Show hidden files and folders](https://support.microsoft.com/en-us/help/14201/windows-show-hidden-files)* in Windows Explorer.
 2. Go into `00000#`. There will be folders with names consisting of lots of letters and numbers. You should find the game's folder within one of them.
@@ -169,11 +182,13 @@ Once it's done you can take the USB out of the console.
       * Some games have multiple .xex files, so if you can't find `default.xex` or it just doesn't work, try another one.
 
 ### Section 4. Activating games
+
 ***By default Xenia runs ALL XBLA/digital games in demo/trial mode.***
 
-To run games in full/activated mode you need to change [this option](https://github.com/xenia-project/xenia/wiki/Options#Run_games_as_fullactivated).
+To run games in full/activated mode you need to change [this option](Options#Run_games_as_fullactivated).
 
 ## Redump method (rare/specific drives)
+
 *For these DVD drives:*
   * SH-D163A / TS-H353A
   * SH-D163B / TS-H353B
@@ -183,6 +198,7 @@ To run games in full/activated mode you need to change [this option](https://git
 ***IF YOUR DRIVE IS NOT LISTED HERE IT WILL NOT WORK!***
 
 # How to install DLCs
+
 1. Identify what the Game Title ID is.
 This can be identified by running the game in Xenia.
 
