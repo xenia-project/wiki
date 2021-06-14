@@ -1,1 +1,0 @@
-[Moved here.](https://github.com/xenia-project/xenia/wiki/Quickstart#how-to-rip-games)
