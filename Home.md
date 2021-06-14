@@ -2,14 +2,15 @@
 
 # Welcome to the Xenia wiki!
 ### Users:
+  * [[FAQ]]
   * [[Quickstart]]
     * [System Requirements](Quickstart#system-requirements)
     * [How to rip games](Quickstart#how-to-rip-games)
     * [[How to transfer saves to or from Xenia]]
-  * [[FAQ]]
   * [[Options]]
   * [Compatibility List](https://github.com/xenia-project/game-compatibility/issues)
   * [[About]]
+  * [[Game hacks, mods, etc]]
 
 #
 ### For Developers:
