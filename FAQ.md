@@ -122,4 +122,4 @@ To play games in 4:3 you need to build Xenia with `video_mode->is_widescreen = 0
 *[Refer to building.md on GitHub](https://github.com/xenia-project/xenia/blob/master/docs/building.md)*
 #
 ### Hacks/mods
-Refer to the [Game hacks, mods, etc. page](Game-hacks,-mods,-etc).
+Refer to the [[Game hacks, mods, etc. page]].
