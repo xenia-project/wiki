@@ -98,7 +98,7 @@ Rasterizer-ordered views are used by default in Xenia where available, but if yo
 The minimum requirements for ROV are:
   * Nvidia GeForce GTX 950 on desktops, GTX 965M on laptops (Maxwell 2nd generation — 2014)
   * AMD Radeon Vega (GCN 5th generation — 2017)
-  * Intel HD Graphics 4000 (2012)
+  * Intel HD Graphics 4200 (2013)
 
 #
 ### What are all of Xenia's options?
