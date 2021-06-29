@@ -40,7 +40,7 @@ Usage: `xenia-vfs-dump [ContainerPath] [DestinationOutput]`
 ![](https://cdn.discordapp.com/attachments/561407879823753217/686821806119845888/vfs.gif)</details>
 #
 ### Does game *X* run?
-Check the [compatibility list](https://github.com/xenia-project/game-compatibility#game-compatibility). If it's not there, ask in the [Discord #help channel](https://discord.gg/Q9mxZf9) or test it yourself.
+Check the [compatibility list](https://github.com/xenia-project/game-compatibility/issues). If it's not there, ask in the [Discord #help channel](https://discord.gg/Q9mxZf9) or test it yourself.
 
 #
 ### Why aren't saves working? (Storage device not found/full/not detected, etc)
