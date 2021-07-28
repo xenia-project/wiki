@@ -18,7 +18,7 @@ Windows Vista or not doesn't matter if it can't run games.
 #
 ### Does Xenia run on Linux or macOS?
 Not natively, but Xenia runs with Wine on Linux.*
-  * [D3D12 will only work on Windows 10 due to vkd3d not being supported.](Quickstart#minimum)
+  * [D3D12 will only work on Windows 10+ due to vkd3d not being supported.](Quickstart#minimum)
 
 macOS is not compatible due to requiring MoltenVK/Metal support which isn't implemented in Xenia.
 #
