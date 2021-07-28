@@ -8,8 +8,6 @@ Refer to the [Quickstart page](Quickstart#system-requirements).
 Refer to the [Quickstart page](Quickstart).
 #
 ### How do I fix "Graphics device lost (probably due to an internal error"?
-~~Try using [Vulkan](Options#rendererbackend) as a *workaround*, **but don't expect it to work**.~~
-
 Try disabling [ROV](Options#Render_target_path) **especially if you have an AMD GPU**.
 #
 ### Can you add support for Windows Me? How about my Pentium II?
