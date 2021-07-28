@@ -4,7 +4,7 @@
 
 ## Recommended:
 
-* OS: Windows 10 x64
+* OS: Windows 10+ x64
 * CPU: 4th generation or later i5/i7 64-bit x86 processor with AVX(2) support
   * You can check with [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
 * GPU: GTX 980 Ti or later
