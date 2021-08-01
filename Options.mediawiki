@@ -3,7 +3,6 @@ __TOC__
 ''[https://github.com/xenia-canary/xenia-canary/wiki/Options Xenia Canary Options]''
 
 = How to use =
-
 # Run xenia if you haven't before.
 # [https://social.technet.microsoft.com/wiki/contents/articles/1784.windows-how-to-view-file-name-extensions.aspx Show file name extensions in Explorer].
 # Go to <code>Documents\Xenia</code> and open <code>xenia.config.toml</code> in a text editor like [https://notepad-plus-plus.org/download/ Notepad++].
@@ -13,9 +12,7 @@ __TOC__
 #* To launch specific games, add the path to the game before the launch options. For example: <code>xenia.exe path/to/game/default.xex --vsync=false</code>
 
 = Options =
-
 == Run games as full/activated ==
-
 {|
 ! <code>license_mask</code> =
 ! <code>#</code>
@@ -28,7 +25,6 @@ __TOC__
 |}
 
 == Game language ==
-
 {|
 ! <code>user_language</code> =
 !align="center"| <code>#</code>
@@ -83,11 +79,8 @@ __TOC__
 |}
 
 == GPU ==
-
 === D3D12 ===
-
 ==== Render target path ====
-
 [https://github.com/xenia-project/xenia/wiki/FAQ#what-is-rov What is ROV (rasterizer-ordered views)?]
 
 Leave this option blank for auto-selection.
@@ -104,7 +97,6 @@ Leave this option blank for auto-selection.
 |}
 
 ==== Resolution scaling ====
-
 {|
 ! <code>draw_resolution_scale</code> =
 ! <code>#</code>
@@ -120,7 +112,6 @@ Leave this option blank for auto-selection.
 |}
 
 ==== CPU readback after render target resolving ====
-
 * This is needed for certain games, including but not limited to:
 ** Orange Box (text/save icons)
 ** SSX (2012, core temp missions)
@@ -137,9 +128,7 @@ Leave this option blank for auto-selection.
 |}
 
 === Misc ===
-
 ==== Allow invalid fetch constants ====
-
 Allow texture and vertex fetch constants with invalid type - generally unsafe because the constant may contain completely invalid values, but may be used to bypass fetch constant type errors in certain games until the real reason why they're invalid is found.
 
 {|
@@ -154,7 +143,6 @@ Allow texture and vertex fetch constants with invalid type - generally unsafe be
 |}
 
 ==== Vsync ====
-
 {|
 ! <code>vsync</code> =
 ! <code>bool</code>
@@ -173,7 +161,6 @@ Allow texture and vertex fetch constants with invalid type - generally unsafe be
 ** Sonic The Hedgehog (2006)
 
 ==== Renderer/Backend ====
-
 {|
 ! <code>gpu</code> =
 ! <code>string</code>
@@ -192,7 +179,6 @@ Allow texture and vertex fetch constants with invalid type - generally unsafe be
 |}
 
 == HID (Input) ==
-
 {|
 ! <code>hid</code> =
 ! <code>string</code>
