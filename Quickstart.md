@@ -48,7 +48,7 @@ Xenia is sometimes detected as a virus. Ignore this, as it is a false positive.
 
 Xenia Canary is a fork of Xenia with changes not present in master, such as the Unreal Engine workaround, etc.
 
-For more information: [[FAQ]]
+For more information: *[What is the difference between Xenia Canary and Xenia master?](https://github.com/xenia-canary/xenia-canary/wiki/FAQ#what-is-the-difference-between-xenia-canary-and-xenia-master)*
 
 # How to rip games
 
