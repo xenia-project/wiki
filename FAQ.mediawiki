@@ -1,6 +1,6 @@
-__TOC__
-
 '''Xenia Master FAQ''' | ''[https://github.com/xenia-canary/xenia-canary/wiki/FAQ Xenia Canary FAQ]''
+
+__TOC__
 
 = How do I use Xenia? =
 Refer to the [https://github.com/xenia-project/xenia/wiki/Quickstart Quickstart page].
