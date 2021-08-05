@@ -1,1 +1,1 @@
-*[Xenia Canary Wiki](../../../xenia-canary/xenia-canary/wiki)*
+**Xenia Master Wiki** | *[Xenia Canary Wiki](../../../xenia-canary/xenia-canary/wiki)*
