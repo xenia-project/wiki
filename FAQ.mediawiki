@@ -1,5 +1,7 @@
 __TOC__
 
+''[https://github.com/xenia-canary/xenia-canary/wiki/FAQ Xenia Canary FAQ]''
+
 = How do I use Xenia? =
 Refer to the [https://github.com/xenia-project/xenia/wiki/Quickstart Quickstart page].
 
