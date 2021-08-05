@@ -15,10 +15,9 @@
 
 * OS: Windows 7+ x64 (Linux/macOS not *natively* supported)
   * **Windows <10 support is limited. *Don't expect anything to work.***
-  * Runs on Linux with Wine.
+  * Runs on Linux with Wine *using Vulkan*.
 * CPU: 64-bit x86 processor with AVX(2) support
   * You can check with [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)
-  * **Pentiums and Celerons do not support AVX(2).**
 * GPU: Direct3D 12-compatible or Vulkan-compatible GPU from [this list](https://vulkan.gpuinfo.org/)
   * Direct3D 12 will only work on Windows 10 due to D3D12on7 and vkd3d not being supported.
   * GPUs without [ROV (rasterizer-ordered view) / fragment shader interlock](FAQ#what-is-rov) support will perform worse and possibly have more graphical issues. Integrated GPUs will also generally provide frame rates too low for comfortable playing.
