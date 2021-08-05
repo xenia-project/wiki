@@ -81,7 +81,7 @@ __TOC__
 == GPU ==
 === D3D12 ===
 ==== Render target path ====
-[https://github.com/xenia-project/xenia/wiki/FAQ#what-is-rov What is ROV (rasterizer-ordered views)?]
+[https://github.com/xenia-project/xenia/wiki/ROV What is ROV (rasterizer-ordered views)?]
 
 Leave this option blank for auto-selection.
 
