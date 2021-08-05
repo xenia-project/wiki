@@ -5,7 +5,6 @@
   * [[Quickstart]]
     * [System Requirements](Quickstart#system-requirements)
     * [How to rip games](Quickstart#how-to-rip-games)
-    * [[How to transfer saves to or from Xenia]]
   * [[Options]]
   * [Compatibility List](https://github.com/xenia-project/game-compatibility/issues)
   * [[About]]
