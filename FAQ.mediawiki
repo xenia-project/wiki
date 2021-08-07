@@ -9,7 +9,7 @@ Refer to the [https://github.com/xenia-project/xenia/wiki/Quickstart Quickstart 
 Refer to the [https://github.com/xenia-project/xenia/wiki/Quickstart#system-requirements Quickstart page].
 
 = How do I fix the VCRUNTIME error? =
-Install the [https://github.com/xenia-project/xenia/wiki/Quickstart#recommended Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017 and 2019].
+Refer to the [https://github.com/xenia-project/xenia/wiki/Quickstart Quickstart page].
 
 = How do I fix "Graphics device lost (probably due to an internal error"? =
 You can't.
