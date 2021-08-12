@@ -8,8 +8,17 @@ Refer to the [https://github.com/xenia-project/xenia/wiki/Quickstart Quickstart 
 = What are Xenia's system requirements? =
 Refer to the [https://github.com/xenia-project/xenia/wiki/Quickstart#system-requirements Quickstart page].
 
+== Why do I get an error saying "Your CPU does not support AVX"? ==
+Your CPU doesn't meet the minimum requirements. (see above)
+
+== Does Xenia support OpenGL/Direct3D11? ==
+No. (see system requirements above)
+
 = How do I fix the VCRUNTIME error? =
 Refer to the [https://github.com/xenia-project/xenia/wiki/Quickstart Quickstart page].
+
+= Why is the audio delayed? =
+Audio is one of the least worked on things in Xenia. There is no fix.
 
 = How do I fix "Graphics device lost (probably due to an internal error"? =
 You can't.
@@ -21,13 +30,16 @@ modern systems and busy with higher priority tasks. Whether the emulator runs on
 Windows Vista or not doesn't matter if it can't run games.
 
 = Does Xenia run on Linux or macOS? =
-Not natively, but Xenia runs with Wine on Linux.*
+Not natively, but Xenia may run with Wine on Linux ''using Vulkan''.*
 * [https://github.com/xenia-project/xenia/wiki/Quickstart#minimum D3D12 will only work on Windows 10+ due to vkd3d not being supported.]
 
 macOS is not compatible due to requiring MoltenVK/Metal support which isn't implemented in Xenia.
 
-= How do I dump/rip games? =
+= How do I dump games? =
 See the guide in [https://github.com/xenia-project/xenia/wiki/Quickstart#How-to-rip-games Quickstart].
+
+== Can I dump games using an Xbox One/Series or run them directly from the disc? ==
+No, and no.
 
 == Why is my game in trial/demo mode? ==
 See [https://github.com/xenia-project/xenia/wiki/Options#Run_games_as_fullactivated this option].
@@ -83,8 +95,8 @@ See the [https://github.com/xenia-project/xenia/Options Options page].
 = What's the difference between Gameplay and Playable? =
 Gameplay means the game reaches gameplay, even if the game is unplayable.
 
-= Can Xenia run OG (original) Xbox games? =
-Xenia does not support OG Xbox games/BC (backwards compatibility).
+= Can Xenia run original Xbox games? =
+Xenia does not support backwards compatibility, and therefore, cannot run original Xbox games.
 
 For that there's [https://github.com/Cxbx-Reloaded/Cxbx-Reloaded Cxbx-Reloaded] and [https://github.com/xqemu/xqemu xqemu].
 
