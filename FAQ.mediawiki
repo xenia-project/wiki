@@ -40,7 +40,7 @@ You can download it from [https://ci.appveyor.com/api/projects/benvanik/xenia/ar
 Usage: <code>xenia-vfs-dump [ContainerPath] [DestinationOutput]</code>
 
 = Does game ''X'' run? =
-Check the [https://github.com/xenia-project/game-compatibility/issues compatibility list]. If it's not there, ask in the [https://discord.gg/Q9mxZf9 Discord #help channel] or test it yourself.
+Check the [https://github.com/xenia-project/game-compatibility#game-compatibility compatibility list]. If it's not there, ask in the [https://discord.gg/Q9mxZf9 Discord #help channel] or test it yourself.
 
 = Saves =
 == Why aren't saves working? (Storage device not found/full/not detected, etc) ==
