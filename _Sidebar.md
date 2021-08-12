@@ -6,7 +6,7 @@
     * [System Requirements](Quickstart#system-requirements)
     * [How to rip games](Quickstart#how-to-rip-games)
   * [[Options]]
-  * [Compatibility List](https://github.com/xenia-project/game-compatibility/issues)
+  * [Compatibility List](https://github.com/xenia-project/game-compatibility#game-compatibility)
   * [[About]]
   * [[Game hacks, mods, etc]]
 
