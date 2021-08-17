@@ -97,17 +97,30 @@ Leave this option blank for auto-selection.
 |}
 
 ==== Resolution scaling ====
+This is a hack, and as such, '''bugs should be expected'''.
+<!--Most games run at 720p, however, there are a few exceptions:
+{|
+! Title
+! Resolution(s)
+|-
+| Halo 3<br>Halo 3 ODST<br>Halo 3 Mythic<br>Halo CE Anniversary
+| 1152x640
+|-
+| Banjo Kazooie<br>Banjo Tooie<br>Bean (GoldenEye 007 HD/Remaster)<br>Perfect Dark
+| 1280x720 (default), 1920x1080
+|}
+-->
 {|
 ! <code>draw_resolution_scale</code> =
 ! <code>#</code>
 |-
-| 1x (''default'', 1280x720)
+| 1x (''default'', 1280x720<!--/1920x1080-->)
 | <code>1</code>
 |-
-| 2x (2560x1440)
+| 2x (2560x1440<!--/3840x2160-->)
 | <code>2</code>
 |-
-| 3x (3840x2160)
+| 3x (3840x2160<!--/5760x3240-->)
 | <code>3</code>
 |}
 
