@@ -8,6 +8,9 @@ Refer to the [https://github.com/xenia-project/xenia/wiki/Quickstart Quickstart 
 = What are Xenia's system requirements? =
 Refer to the [https://github.com/xenia-project/xenia/wiki/Quickstart#system-requirements Quickstart page].
 
+== How do I improve performance? ==
+Upgrade your PC or wait for optimizations.
+
 == Why do I get an error saying "Your CPU does not support AVX"? ==
 Your CPU doesn't meet the minimum requirements. (see above)
 
