@@ -151,7 +151,7 @@ Allow texture and vertex fetch constants with invalid type - generally unsafe be
 | Off (''default'')
 | <code>false</code>
 |-
-| On
+| On (hack)
 | <code>true</code>
 |}
 
@@ -209,3 +209,39 @@ Allow texture and vertex fetch constants with invalid type - generally unsafe be
 | <code>winkey</code>
 |}
 *When using SDL: If your game controller is not mapped correctly, [https://github.com/gabomdq/SDL_GameControllerDB/blob/master/gamecontrollerdb.txt download gamecontrollerdb.txt] and place it in the folder next to your xenia executable.
+
+== Hacks ==
+=== Protect zero ===
+{|
+! <code>protect_zero</code> =
+! <code>bool</code>
+|-
+| True ''(default)''
+| <code>true</code>
+|-
+| False (hack, needed for certain games)
+| <code>false</code>
+|}
+* Certain games require this to set be set to false to work around crashes. This includes, but isn't limited to:
+** Saints Row 1
+<!--
+=== Break on unimplemented instruction ===
+{|
+! <code>break_on_unimplemented_instruction</code> =
+! <code>bool</code>
+|-
+| True ''(default)''
+| <code>true</code>
+|-
+| False (hack, needed for certain games)
+| <code>false</code>
+|}
+* Certain games require this to set be set to false to work around crashes. This includes, but isn't limited to:
+** Source Engine/Valve games:
+*** The Orange Box
+*** Counter Strike: Global Offensive
+*** <s>Portal 2</s> ''(crashes before the menu)''
+*** Left 4 Dead 1+2''(?)''
+**** These games additionally require the following:
+***** <code>cl</code> set to <code>-dvd -retail -nosound</code>
+-->
