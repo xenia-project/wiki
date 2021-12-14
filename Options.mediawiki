@@ -110,17 +110,36 @@ This is a hack, and as such, '''bugs should be expected'''.
 | 1280x720 (default), 1920x1080
 |}
 -->
+
+Horizontal scale:
+
 {|
-! <code>draw_resolution_scale</code> =
+! <code>draw_resolution_scale_x</code> =
 ! <code>#</code>
 |-
-| 1x (''default'', 1280x720<!--/1920x1080-->)
+| 1x (''default'', 1280x)
 | <code>1</code>
 |-
-| 2x (2560x1440<!--/3840x2160-->)
+| 2x (2560x)
 | <code>2</code>
 |-
-| 3x (3840x2160<!--/5760x3240-->)
+| 3x (3840x)
+| <code>3</code>
+|}
+
+Vertical scale:
+
+{|
+! <code>draw_resolution_scale_y</code> =
+! <code>#</code>
+|-
+| 1x (''default'', x720)
+| <code>1</code>
+|-
+| 2x (x1440)
+| <code>2</code>
+|-
+| 3x (x2160)
 | <code>3</code>
 |}
 
