@@ -47,7 +47,7 @@ __TOC__
 | IT (Italian/Italiano)
 |align="center"| <code>6</code>
 |-
-| KO (Korean/한국인)
+| KO (Korean/한국어)
 |align="center"| <code>7</code>
 |-
 | ZH (Traditional Chinese/繁體中文)
@@ -56,7 +56,7 @@ __TOC__
 | PT (Portuguese/Português)
 |align="center"| <code>9</code>
 |-
-| PL (Polish/Polskie)
+| PL (Polish/Polski)
 |align="center"| <code>11</code>
 |-
 | RU (Russian/русский)
