@@ -1,0 +1,31 @@
+name: Update State Labels
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get compatibility labels
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: | #nodes[]
+          labels=$(gh api graphql --paginate --jq '.data.repository.labels' -f query='
+            query($endCursor: String) {
+              repository(owner: "xenia-project", name: "game-compatibility") {
+                labels(first:100, query: "state-", after:$endCursor) {
+                  nodes {
+                    name
+                    color
+                  }
+                  pageInfo {
+                    hasNextPage
+                    endCursor
+                  }
+                }
+              }
+            }
+          ')
+          echo "$labels"

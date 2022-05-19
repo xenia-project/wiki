@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "color": "ee6633",
+      "name": "state-title"
+    },
+    {
+      "color": "880000",
+      "name": "state-nothing"
+    },
+    {
+      "color": "ff3300",
+      "name": "state-intro"
+    },
+    {
+      "color": "ff9999",
+      "name": "state-load"
+    },
+    {
+      "color": "BB0000",
+      "name": "state-crash-xna-WONTFIX"
+    },
+    {
+      "color": "BB0000",
+      "name": "state-crash-host"
+    },
+    {
+      "color": "BB0000",
+      "name": "state-hang"
+    },
+    {
+      "color": "99aa00",
+      "name": "state-gameplay"
+    },
+    {
+      "color": "fbca04",
+      "name": "state-menus"
+    },
+    {
+      "color": "22bb22",
+      "name": "state-playable"
+    },
+    {
+      "color": "BB0000",
+      "name": "state-crash-OBSOLETE"
+    },
+    {
+      "color": "BB0000",
+      "name": "state-crash-guest"
+    }
+  ],
+  "pageInfo": {
+    "endCursor": "Y3Vyc29yOjEy",
+    "hasNextPage": false
+  }
+}
