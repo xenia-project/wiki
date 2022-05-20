@@ -1,0 +1,127 @@
+site_name: Xenia Wiki
+repo_url: https://github.com/xenia-project/wiki.git
+theme:
+  name: material
+  favicon: https://raw.githubusercontent.com/xenia-project/xenia/master/assets/icon/16.png
+  icon:
+    repo: fontawesome/brands/github
+  logo: art/icon.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Poppins
+    code: Jetbrains Mono
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.indexes
+extra_css:
+    - css/emoji.css
+    - css/progress_bars.css
+    - css/spinner.css
+extra_javascript:
+    - javascripts/compatibility_colors.js
+    - javascripts/compatibility_list.js
+strict: true
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.tasklist
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      user: xenia-project
+      repo: wiki
+  - pymdownx.progressbar:
+      progress_increment: 1
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - extras
+  - pymdownx.highlight:
+      anchor_linenums: true
+nav:
+  - Home:
+    - index.md
+  - FAQ:
+    - faq/index.md
+    - Quickstart:
+      - faq/quickstart/index.md
+      - System Requirements: faq/quickstart/system_requirements.md
+      - Where to Download: faq/quickstart/download.md
+      - Dumping Games: faq/quickstart/dumping.md
+      - Installing DLC: faq/quickstart/install_dlc.md
+      - Activating Games and DLC: faq/quickstart/activate_games.md
+    - Roadmap: faq/roadmap.md
+    - Options:
+      - faq/options/index.md
+      - Content:
+        - License Mask: faq/options/content/license_mask.md
+      - CPU:
+        - Break On Unimplemented: faq/options/cpu/break_on_unimplemented_instructions.md
+      - D3D12:
+        - Readback Resolve: faq/options/d3d12/d3d12_readback_resolve.md
+      - GPU:
+        - Resolution Scale X: faq/options/gpu/draw_resolution_scale_x.md
+        - Resolution Scale Y: faq/options/gpu/draw_resolution_scale_y.md
+        - Renderer/Backend: faq/options/gpu/gpu.md
+        - Invalid Fetch Constants: faq/options/gpu/gpu_allow_invalid_fetch_constants.md
+        - Render Target Path: faq/options/gpu/render_target_path_d3d12.md
+        - Vsync: faq/options/gpu/vsync.md
+      - HID:
+        - Input Backend: faq/options/hid/hid.md
+        - HID WinKey: faq/options/hid/winkey/winkey.md
+      - Memory:
+        - Protect Zero: faq/options/memory/protect_zero.md
+      - XConfig:
+        - User Language: faq/options/xconfig/user_language.md
+  - Development:
+    - development/index.md
+    - Building: development/building.md
+    - Style Guide: development/style_guide.md
+    - Instruction Tracing: development/instruction_tracing.md
+    - 360 Documentation:
+      - development/console-docs/index.md
+      - Hardware:
+        - CPU: development/console-docs/cpu.md
+        - CPU To-Do: development/console-docs/cpu_todo.md
+        - GPU: development/console-docs/gpu.md
+      - Kernel: development/console-docs/kernel.md
+    - References:
+      - development/references/index.md
+      - Xbox 360: development/references/console/index.md
+      - Platforms:
+        - development/references/target/index.md
+        - Android: development/references/target/android.md
+  - Wiki:
+    - meta/index.md
+    - Contribution Guide: meta/contributing.md
+

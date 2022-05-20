@@ -1,0 +1,57 @@
+{
+  "files": [
+    "README.md",
+    "docs/meta/index.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "halotroop2288",
+      "name": "Caroline Joy Bell",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30361266?v=4",
+      "profile": "http://halotroop.com",
+      "contributions": [
+        "doc",
+        "content",
+        "design",
+        "code"
+      ]
+    },
+    {
+      "login": "Margen67",
+      "name": "Margen67",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3462541?v=4",
+      "profile": "https://github.com/Margen67",
+      "contributions": [
+        "doc",
+        "content",
+        "code"
+      ]
+    },
+    {
+      "login": "BillieBlueberry",
+      "name": "Billie",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45376047?v=4",
+      "profile": "https://github.com/BillieBlueberry",
+      "contributions": [
+        "test"
+      ]
+    },
+    {
+      "login": "Razzile",
+      "name": "Satori",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5256381?v=4",
+      "profile": "http://twitter.com/Razzilient",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 5,
+  "projectName": "wiki",
+  "projectOwner": "xenia-project",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
