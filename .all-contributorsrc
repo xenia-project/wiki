@@ -49,8 +49,8 @@
     }
   ],
   "contributorsPerLine": 5,
-  "projectName": "xenia-wiki-temp",
-  "projectOwner": "halotroop2288",
+  "projectName": "wiki",
+  "projectOwner": "xenia-project",
   "repoType": "github",
   "repoHost": "https://github.com",
   "skipCi": true
