@@ -93,7 +93,7 @@ With an FPS indicator like [https://www.guru3d.com/files-details/rtss-rivatuner-
 See [[ROV]].
 
 = What are Xenia's options? =
-See the [https://github.com/xenia-project/xenia/Options Options page].
+See the [https://github.com/xenia-project/xenia/wiki/Options Options page].
 
 = What's the difference between Gameplay and Playable? =
 Gameplay means the game reaches gameplay, even if the game is unplayable.
