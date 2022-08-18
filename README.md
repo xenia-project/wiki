@@ -9,7 +9,6 @@ The official home of documentation for Xenia.
 
 See the [contribution guide](https://xenia.jp/wiki/meta/contributing) for details.
 
-
 ## License
 
 The articles, images, and other original works on this website are licensed under [CC-BY-SA 4.0](LICENSE).
