@@ -30,9 +30,7 @@ extra_css:
     - css/emoji.css
     - css/progress_bars.css
     - css/spinner.css
-extra_javascript:
-    - javascripts/compatibility_colors.js
-    - javascripts/compatibility_list.js
+#extra_javascript:
 strict: true
 markdown_extensions:
   - admonition
@@ -124,4 +122,3 @@ nav:
   - Wiki:
     - meta/index.md
     - Contribution Guide: meta/contributing.md
-

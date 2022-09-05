@@ -13,30 +13,30 @@
 
 =================================================================
 Conventions:
-   VD128, VS128:  5 lower bits of a VMX128 vector register 
+   VD128, VS128:  5 lower bits of a VMX128 vector register
                   number
    VDh:	          upper 2 bits of VD128
                   (so register number is (VDh << 5 | VD128))
-		 
+
    VA128:         same as VD128
    A:             bit 6 of VA128
    a:             bit 5 of VA128
                   (so register number is (A<<6 | a<<5 | VA128))
-                     
+
    VB128:         same as VD128
    VBh:           same as VDh
-   
+
    VC128:         3 bits of a VMX128 vector register number
                   (you can only use vr0-vr7 here)
-   
+
    RA, RB:        general purpose register number
 
    UIMM:          unsigned immediate value
    SIMM:          signed immediate value
-   
+
    PERMh:         upper 3 bits of a permutation
    PERMl:         lower 5 bits of a permutation
-   
+
    x, y, z:       unknown immediate values
 
 =================================================================
@@ -166,7 +166,7 @@ Conventions:
 
 
 =================================================================
-   vandc128                                Vector128 Logical AND 
+   vandc128                                Vector128 Logical AND
                                                  with Complement
 |0 0 0 1 0 1|  VD128  |  VA128  |  VB128  |A|1 0 1 0|a|1|VDh|VBh|
 
@@ -174,7 +174,7 @@ Conventions:
 
 
 =================================================================
-   vcfpsxws128          Vector128 Convert From Floating-Point to 
+   vcfpsxws128          Vector128 Convert From Floating-Point to
                                 Signed Fixed-Point Word Saturate
 |0 0 0 1 1 0|  VD128  |  SIMM   |  VB128  |0 1 0 0 0 1 1|VDh|VBh|
 
@@ -182,7 +182,7 @@ Conventions:
 
 
 =================================================================
-   vcfpuxws128          Vector128 Convert From Floating-Point to 
+   vcfpuxws128          Vector128 Convert From Floating-Point to
                               Unsigned Fixed-Point Word Saturate
 |0 0 0 1 1 0|  VD128  |  UIMM   |  VB128  |0 1 0 0 1 1 1|VDh|VBh|
 
@@ -190,7 +190,7 @@ Conventions:
 
 
 =================================================================
-   vcmpbfp128                           Vector128 Compare Bounds 
+   vcmpbfp128                           Vector128 Compare Bounds
                                                   Floating Point
 |0 0 0 1 1 0|  VD128  |  VA128  |  VB128  |A|0 1 1|R|a|0|VDh|VBh|
 
@@ -208,7 +208,7 @@ Conventions:
 
 
 =================================================================
-   vcmpequw128                        Vector128 Compare Equal-to 
+   vcmpequw128                        Vector128 Compare Equal-to
                                                    Unsigned Word
 |0 0 0 1 1 0|  VD128  |  VA128  |  VB128  |A|1 0 0|R|a|0|VDh|VBh|
 
@@ -226,7 +226,7 @@ Conventions:
 
 
 =================================================================
-   vcmpgtfp128                    Vector128 Compare Greater-Than 
+   vcmpgtfp128                    Vector128 Compare Greater-Than
                                                   Floating-Point
 |0 0 0 1 1 0|  VD128  |  VA128  |  VB128  |A|0 1 0|R|a|0|VDh|VBh|
 
@@ -235,7 +235,7 @@ Conventions:
 
 
 =================================================================
-   vcsxwfp128          Vector128 Convert From Signed Fixed-Point 
+   vcsxwfp128          Vector128 Convert From Signed Fixed-Point
                                           Word to Floating-Point
 |0 0 0 1 1 0|  VD128  |  UIMM   |  VB128  |0 1 0 1 0 1 1|VDh|VBh|
 
@@ -251,7 +251,7 @@ Conventions:
 
 
 =================================================================
-   vexptefp128                Vector128 2 Raised to the Exponent 
+   vexptefp128                Vector128 2 Raised to the Exponent
                                          Estimate Floating Point
 |0 0 0 1 1 0|  VD128  |0 0 0 0 0|  VB128  |1 1 0 1 0 1 1|VDh|VBh|
 
@@ -259,7 +259,7 @@ Conventions:
 
 
 =================================================================
-   vlogefp128                            Vector128 Log2 Estimate 
+   vlogefp128                            Vector128 Log2 Estimate
                                                   Floating Point
 |0 0 0 1 1 0|  VD128  |0 0 0 0 0|  VB128  |1 1 0 1 1 1 1|VDh|VBh|
 
@@ -267,7 +267,7 @@ Conventions:
 
 
 =================================================================
-   vmaddcfp128                            Vector128 Multiply Add 
+   vmaddcfp128                            Vector128 Multiply Add
                                                   Floating Point
 |0 0 0 1 0 1|  VDS128 |  VA128  |  VB128  |A|0 1 0 0|a|1|VDh|VBh|
 
@@ -275,7 +275,7 @@ Conventions:
 
 
 =================================================================
-   vmaddfp128                             Vector128 Multiply Add 
+   vmaddfp128                             Vector128 Multiply Add
                                                   Floating Point
 |0 0 0 1 0 1|  VDS128 |  VA128  |  VB128  |A|0 0 1 1|a|1|VDh|VBh|
 
@@ -283,7 +283,7 @@ Conventions:
 
 
 =================================================================
-   vmaxfp128                                   Vector128 Maximum 
+   vmaxfp128                                   Vector128 Maximum
                                                   Floating Point
 |0 0 0 1 1 0|  VD128  |  VA128  |  VB128  |A|1 0 1 0|a|0|VDh|VBh|
 
@@ -313,7 +313,7 @@ Conventions:
 
 
 =================================================================
-   vmsum3fp128                      Vector128 Multiply Sum 3-way 
+   vmsum3fp128                      Vector128 Multiply Sum 3-way
                                                   Floating Point
 |0 0 0 1 0 1|  VD128  |  VA128  |  VB128  |A|0 1 1 0|a|1|VDh|VBh|
 
@@ -321,7 +321,7 @@ Conventions:
 
 
 =================================================================
-   vmsum4fp128                      Vector128 Multiply Sum 4-way 
+   vmsum4fp128                      Vector128 Multiply Sum 4-way
                                                   Floating-Point
 |0 0 0 1 0 1|  VD128  |  VA128  |  VB128  |A|0 1 1 1|a|1|VDh|VBh|
 
@@ -337,7 +337,7 @@ Conventions:
 
 
 =================================================================
-   vnmsubfp128              Vector128 Negative Multiply-Subtract 
+   vnmsubfp128              Vector128 Negative Multiply-Subtract
                                                   Floating Point
 |0 0 0 1 0 1|  VDS128 |  VA128  |  VB128  |A|0 1 0 1|a|1|VDh|VBh|
 
@@ -373,7 +373,7 @@ Conventions:
 
 
 =================================================================
-   vpkd3d128                 Vector128 Pack D3Dtype, Rotate Left 
+   vpkd3d128                 Vector128 Pack D3Dtype, Rotate Left
                                        Immediate and Mask Insert
 |0 0 0 1 1 0|  VD128  |  x  | y |  VB128  |1 1 0| z |0 1|VDh|VBh|
 
@@ -381,7 +381,7 @@ Conventions:
 
 
 =================================================================
-   vpkshss128                    Vector128 Pack Signed Half Word 
+   vpkshss128                    Vector128 Pack Signed Half Word
                                                  Signed Saturate
 |0 0 0 1 0 1|  VD128  |  VA128  |  VB128  |A|1 0 0 0|a|0|VDh|VBh|
 
@@ -389,7 +389,7 @@ Conventions:
 
 
 =================================================================
-   vpkshus128                    Vector128 Pack Signed Half Word 
+   vpkshus128                    Vector128 Pack Signed Half Word
                                                Unsigned Saturate
 |0 0 0 1 0 1|  VD128  |  VA128  |  VB128  |A|1 0 0 1|a|0|VDh|VBh|
 
@@ -405,7 +405,7 @@ Conventions:
 
 
 =================================================================
-   vpkswus128                         Vector128 Pack Signed Word   
+   vpkswus128                         Vector128 Pack Signed Word
                                                Unsigned Saturate
 |0 0 0 1 0 1|  VD128  |  VA128  |  VB128  |A|1 0 1 1|a|0|VDh|VBh|
 
@@ -413,7 +413,7 @@ Conventions:
 
 
 =================================================================
-   vpkuhum128                  Vector128 Pack Unsigned Half Word 
+   vpkuhum128                  Vector128 Pack Unsigned Half Word
                                                  Unsigned Modulo
 |0 0 0 1 0 1|  VD128  |  VA128  |  VB128  |A|1 1 0 0|a|0|VDh|VBh|
 
@@ -421,7 +421,7 @@ Conventions:
 
 
 =================================================================
-   vpkuhus128                  Vector128 Pack Unsigned Half Word 
+   vpkuhus128                  Vector128 Pack Unsigned Half Word
                                                Unsigned Saturate
 |0 0 0 1 0 1|  VD128  |  VA128  |  VB128  |A|1 1 0 1|a|0|VDh|VBh|
 
@@ -445,7 +445,7 @@ Conventions:
 
 
 =================================================================
-   vrefp128                        Vector128 Reciprocal Estimate 
+   vrefp128                        Vector128 Reciprocal Estimate
                                                   Floating Point
 |0 0 0 1 1 0|  VD128  |0 0 0 0 0|  VB128  |1 1 0 0 0 1 1|VDh|VBh|
 
@@ -453,7 +453,7 @@ Conventions:
 
 
 =================================================================
-   vrfim128                    Vector128 Round to Floating-Point 
+   vrfim128                    Vector128 Round to Floating-Point
                                               Integer toward -oo
 |0 0 0 1 1 0|  VD128  |0 0 0 0 0|  VB128  |0 1 1 0 0 1 1|VDh|VBh|
 
@@ -461,7 +461,7 @@ Conventions:
 
 
 =================================================================
-   vrfin128                    Vector128 Round to Floating-Point 
+   vrfin128                    Vector128 Round to Floating-Point
                                           Integer toward Nearest
 |0 0 0 1 1 0|  VD128  |0 0 0 0 0|  VB128  |0 1 1 0 1 1 1|VDh|VBh|
 
@@ -469,7 +469,7 @@ Conventions:
 
 
 =================================================================
-   vrfip128                    Vector128 Round to Floating-Point 
+   vrfip128                    Vector128 Round to Floating-Point
                                               Integer toward +oo
 |0 0 0 1 1 0|  VD128  |0 0 0 0 0|  VB128  |0 1 1 1 0 1 1|VDh|VBh|
 
@@ -477,7 +477,7 @@ Conventions:
 
 
 =================================================================
-   vrfiz128                    Vector128 Round to Floating-Point 
+   vrfiz128                    Vector128 Round to Floating-Point
                                              Integer toward Zero
 |0 0 0 1 1 0|  VD128  |0 0 0 0 0|  VB128  |0 1 1 1 1 1 1|VDh|VBh|
 
@@ -485,7 +485,7 @@ Conventions:
 
 
 =================================================================
-   vrlimi128                     Vector128 Rotate Left Immediate 
+   vrlimi128                     Vector128 Rotate Left Immediate
                                                  and Mask Insert
 |0 0 0 1 1 0|  VD128  |  UIMM   |  VB128  |1 1 1| z |0 1|VDh|VBh|
 
@@ -500,7 +500,7 @@ Conventions:
 
 
 =================================================================
-   vrsqrtefp128                 Vector128 Reciprocal Square Root 
+   vrsqrtefp128                 Vector128 Reciprocal Square Root
                                          Estimate Floating Point
 |0 0 0 1 1 0|  VD128  |0 0 0 0 0|  VB128  |1 1 0 0 1 1 1|VDh|VBh|
 
@@ -515,7 +515,7 @@ Conventions:
 
 
 =================================================================
-   vsldoi128                         Vector128 Shift Left Double 
+   vsldoi128                         Vector128 Shift Left Double
                                               by Octet Immediate
 |0 0 0 1 0 0|  VD128  |  VA128  |  VB128  |A|  SHB  |a|1|VDh|VBh|
 
@@ -537,7 +537,7 @@ Conventions:
 
 
 =================================================================
-   vspltisw128                         Vector128 Splat Immediate 
+   vspltisw128                         Vector128 Splat Immediate
                                                      Signed Word
 |0 0 0 1 1 0|  VD128  |  SIMM   |  VB128  |1 1 1 0 1 1 1|VDh|VBh|
 
@@ -552,7 +552,7 @@ Conventions:
 
 
 =================================================================
-   vsraw128                                Vector128 Shift Right 
+   vsraw128                                Vector128 Shift Right
                                                  Arithmetic Word
 |0 0 0 1 1 0|  VD128  |  VA128  |  VB128  |A|0 1 0 1|a|1|VDh|VBh|
 
@@ -588,7 +588,7 @@ Conventions:
 
 
 =================================================================
-   vupkhsb128                                   Vector128 Unpack 
+   vupkhsb128                                   Vector128 Unpack
                                                 High Signed Byte
 |0 0 0 1 1 0|  VD128  |0 0 0 0 0|  VB128  |0 1 1 1 0 0 0|VDh|VBh|
 
@@ -596,7 +596,7 @@ Conventions:
 
 
 =================================================================
-   vupklsb128                                   Vector128 Unpack 
+   vupklsb128                                   Vector128 Unpack
                                                  Low Signed Byte
 |0 0 0 1 1 0|  VD128  |0 0 0 0 0|  VB128  |0 1 1 1 1 0 0|VDh|VBh|
 
