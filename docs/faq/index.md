@@ -74,13 +74,6 @@ Usage: `xenia-vfs-dump [[DestinationOutput](ContainerPath])`
 ## Does game *X* run?
 Check the [compatibility list](https://github.com/xenia-project/game-compatibility#game-compatibility). If it's not there, ask in the [Discord #help channel](https://discord.gg/Q9mxZf9) or test it yourself.
 
-<!--- TODO(halotroop2288): Solve the dynamic compatibility tracker problem
-
-??? info "Compatibility List"
-    <iframe style="background-color: white;" src="https://azu.github.io/github-issue-widget/?owner=xenia-project&repo=game-compatibility&limit=100&state=open&label=state-playable" allowtransparency="false" frameborder="yes" scrolling="yes" width="100%"></iframe>
-
---->
-
 ### What's the difference between Gameplay and Playable?
 Gameplay means the game reaches gameplay, even if the game is unplayable.
 
@@ -132,13 +125,6 @@ For that there's [Cxbx-Reloaded](https://github.com/Cxbx-Reloaded/Cxbx-Reloaded)
 
 ***No.*** **Do not** post links or downloads to such resources or **you will be banned**.
 
-## Build tweaks
-### 4:3
+## Game patches
 
-To play games in 4:3 you need to build Xenia with `video_mode->is_widescreen = 0` instead of 1 [here](https://github.com/xenia-project/xenia/blob/master/src/xenia/kernel/xboxkrnl/xboxkrnl_video.cc#L138).
-
-**[Refer to building.md on GitHub](https://github.com/xenia-project/xenia/blob/master/docs/building.md)**
-
-## Hacks/mods
-
-Refer to the [Game hacks, mods, etc. page](https://github.com/xenia-project/xenia/wiki/Game-hacks,-mods,-etc).
+Refer to the [game-patches repository](https://github.com/xenia-canary/game-patches).
