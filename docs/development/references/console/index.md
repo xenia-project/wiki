@@ -28,7 +28,7 @@ See the `console-refs/documents` folder on [GitHub](https://github.com/xenia-pro
   |Name + Link|Description + Author|
   |:---|:---|
   |[PowerPC Core Instructions](documents/ppc/core_instructions.pdf)|Core PowerPC CPU instruction set by IBM|
-  |[PowerP{ AltiVec Instructions](documents/ppc/altivec_instructions.pdf)|AltiVec Instruction set by Motorola|
+  |[PowerPC AltiVec Instructions](documents/ppc/altivec_instructions.pdf)|AltiVec Instruction set by Motorola|
 
 === "GPU"
   |Name + Link|Description + Author|
