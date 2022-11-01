@@ -1,4 +1,5 @@
 <!--- This file is a snippet --->
+
 |**license_mask**                           |  **#**  |
 |:------------------------------------------|:-------:|
 | Deactivated/trial/demo mode (*default*)   |    0    |

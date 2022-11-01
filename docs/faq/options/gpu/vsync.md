@@ -1,4 +1,5 @@
 <!--- This file is a snippet --->
+
 |**vsync**         |**bool**|
 |:-----------------|:------:|
 | On (*default*)   |  true  |
