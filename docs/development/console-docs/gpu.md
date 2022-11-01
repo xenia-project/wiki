@@ -80,7 +80,7 @@ disassembly is broken. Finally, the right most box will show the
 translated shader in the desired format.
 
 For more information and setup instructions see
-[tools/shader-playground/README.md](https://github.com/xenia-project/xenia/tools/shader-playground/README.md).
+[tools/shader-playground/README.md](https://github.com/xenia-project/xenia/blob/master/tools/shader-playground/README.md).
 
 ### xe-gpu-trace-viewer
 
