@@ -1,0 +1,22 @@
+name: Wiki
+
+on: push
+
+jobs:
+  wiki:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          repository: ${{ github.repository_owner }}/xenia-project.wiki
+      - name: Test
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ls
+#          echo Test > Test.md
+#          git config --global user.email "actions@github.com"
+#          git config --global user.name "github-actions"
+#          git add .
+#          git commit -am Test
+#          git push
