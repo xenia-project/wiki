@@ -1,1 +1,1 @@
-https://github.com/xenia-project/xenia/blob/master/docs/instruction_tracing.md
+# The Xenia wiki has been moved [here](https://github.com/xenia-canary/xenia-canary/wiki).

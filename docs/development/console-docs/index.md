@@ -1,3 +1,1 @@
-# Xbox 360 Documentation
-
-In this section: Articles about the Xbox 360 hardware and system software written by Xenia contributors!
+# The Xenia wiki has been moved [here](https://github.com/xenia-canary/xenia-canary/wiki).
