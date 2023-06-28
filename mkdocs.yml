@@ -115,7 +115,6 @@ nav:
       - Kernel: development/console-docs/kernel.md
     - References:
       - development/references/index.md
-      - Xbox 360: development/references/console/index.md
       - Platforms:
         - development/references/target/index.md
         - Android: development/references/target/android.md
