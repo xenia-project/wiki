@@ -9,18 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: 3.x
-      - uses: actions/cache@v3
+      - uses: actions/checkout@main
+      - uses: actions/cache@main
         with:
           key: ${{ github.ref }}
           path: site
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install mkdocs mkdocs-material
+        run: pip install mkdocs mkdocs-material
       - name: Build static files
         run: mkdocs build
       - name: Building gh-pages repo
